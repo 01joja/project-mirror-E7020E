@@ -16,4 +16,7 @@ Name *nuttali* is from *Ochrotomys nuttalli* that is the *Latin* name for [golde
 - 2 sidbutton
 - Considering RGB.
 
+Public found on:
+(Public)[https://github.com/01joja/project-mirror-E7020E]
+
 
