@@ -17,6 +17,7 @@ Name *nuttali* is from *Ochrotomys nuttalli* that is the *Latin* name for [golde
 - Considering RGB.
 
 Public found on:
-(Public)[https://github.com/01joja/project-mirror-E7020E]
+
+[Public](https://github.com/01joja/project-mirror-E7020E)
 
 
