@@ -10,8 +10,8 @@ Insted of USB-C
 [Or Slide button for reset and boot0](https://www.elfa.se/en/slide-switch-1co-on-on-pcb-through-hole-rnd-components-rnd-210-00662/p/30161239?q=&pos=1&origPos=8&origPageSize=10&track=true) 13.20 SEK  
 
 
-[Mouse wheel](https://www.aliexpress.com/item/32992005759.html?spm=a2g0o.productlist.0.0.47345f41tEoATe&algo_pvid=def57cd5-4d15-4c37-a254-6d3e2b2b66e9&algo_expid=def57cd5-4d15-4c37-a254-6d3e2b2b66e9-0&btsid=2100bb4a16122955425588044e8589&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
-
+[Mouse Encoder](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20210202115220&SearchText=mouse+encoder)  
+[Mouse wheel](https://www.aliexpress.com/item/4001130734583.html?spm=a2g0o.productlist.0.0.c3d54185olZU1Z&algo_pvid=3286bd96-9665-4c1a-8086-8c6a5f0af00b&algo_expid=3286bd96-9665-4c1a-8086-8c6a5f0af00b-7&btsid=0b0a050116122963007627682e0cfa&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)  
 
 
 
