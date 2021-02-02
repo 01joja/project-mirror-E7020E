@@ -3,7 +3,7 @@
 [LED](https://www.elfa.se/en/smd-led-645nm-0805-65cd-30ma-kingbright-kptd-2012surck/p/30118951) 0.9595 SEK  
 
 Insted of USB-C  
-[straight 5-pin Header](https://www.elfa.se/search?q=5-pin&sid=4abaef107a228e74d1d040fe4799c7b8a2bee8cb&page=3&pageSize=10)
+[straight 5-pin Header](https://www.elfa.se/en/pin-header-single-row-straight-pin-header-plug-positions-5mm-jst-b5b-xh-lf-sn/p/14301997?q=5-pin&pos=24&origPos=24&origPageSize=10&track=true) 2.01 SEK
 
 
 
