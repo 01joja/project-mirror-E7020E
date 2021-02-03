@@ -13,7 +13,7 @@ Insted of USB-C
 [Mouse Encoder](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20210202115220&SearchText=mouse+encoder)  
 [Mouse wheel](https://www.aliexpress.com/item/4001130734583.html?spm=a2g0o.productlist.0.0.c3d54185olZU1Z&algo_pvid=3286bd96-9665-4c1a-8086-8c6a5f0af00b&algo_expid=3286bd96-9665-4c1a-8086-8c6a5f0af00b-7&btsid=0b0a050116122963007627682e0cfa&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)  
 
-[Mouse Button](https://www.elfa.se/en/tactile-switch-1no-on-off-53n-5x6mm-wuerth-elektronik-434121050836/p/30142305?q=&pos=133&origPos=133&origPageSize=10&track=true) 6.84 SEK
+[Mouse Buttons](https://www.elfa.se/en/tactile-switch-1no-on-off-53n-5x6mm-wuerth-elektronik-434121050836/p/30142305?q=&pos=133&origPos=133&origPageSize=10&track=true) 6.84 SEK
 
 
 
