@@ -247,29 +247,11 @@ X PC1 9 -700 -200 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_SPDT
+# Nuttali-rescue_+1.9V-new_components
 #
-DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
-F0 "SW" 0 170 50 H V C CNN
-F1 "Switch_SW_SPDT" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C -80 0 20 0 0 0 N
-C 80 -100 20 0 0 0 N
-C 80 100 20 0 1 0 N
-P 2 0 1 0 -60 10 65 90 N
-X A 1 200 100 100 L 50 50 1 1 P
-X B 2 -200 0 100 R 50 50 1 1 P
-X C 3 200 -100 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# new_components_+1.9V
-#
-DEF new_components_+1.9V #PWR 0 0 Y Y 1 F P
+DEF Nuttali-rescue_+1.9V-new_components #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "new_components_+1.9V" 0 140 50 H V C CNN
+F1 "Nuttali-rescue_+1.9V-new_components" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -280,15 +262,15 @@ X +1V0 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# new_components_PMW3389
+# Nuttali-rescue_PMW3389-new_components
 #
-DEF new_components_PMW3389 U 0 40 Y Y 1 F N
+DEF Nuttali-rescue_PMW3389-new_components U 0 40 Y Y 1 F N
 F0 "U" 0 -550 50 H V C CNN
-F1 "new_components_PMW3389" 0 -550 50 H V C CNN
+F1 "Nuttali-rescue_PMW3389-new_components" 0 -600 50 H V C CNN
 F2 "" 0 -550 50 H I C CNN
 F3 "" 0 -550 50 H I C CNN
 DRAW
-S -350 400 250 -500 0 1 0 N
+S -350 400 250 -500 0 1 0 f
 X NC_0 1 -450 300 100 R 50 50 1 1 N
 X SCLK 10 350 -300 100 L 50 50 1 1 I
 X MOSI 11 350 -200 100 L 50 50 1 1 I
@@ -305,6 +287,24 @@ X GPO 6 -450 -200 100 R 50 50 1 1 N
 X NRESET 7 -450 -300 100 R 50 50 1 1 I
 X GND 8 -450 -400 100 R 50 50 1 1 w
 X MOTION 9 350 -400 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_SPDT
+#
+DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
+F0 "SW" 0 170 50 H V C CNN
+F1 "Switch_SW_SPDT" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 -100 20 0 0 0 N
+C 80 100 20 0 1 0 N
+P 2 0 1 0 -60 10 65 90 N
+X A 1 200 100 100 L 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 P
+X C 3 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
