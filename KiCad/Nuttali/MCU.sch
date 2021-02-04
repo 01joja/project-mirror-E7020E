@@ -586,9 +586,9 @@ MOTION
 Wire Wire Line
 	6200 2650 6150 2650
 Text GLabel 6200 3750 2    50   BiDi ~ 0
-DM
+D-
 Text GLabel 6200 3850 2    50   BiDi ~ 0
-DP
+D+
 Text GLabel 6200 5350 2    50   Output ~ 0
 SCK
 Text GLabel 6200 5450 2    50   Output ~ 0
