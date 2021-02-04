@@ -2,6 +2,8 @@
 [MCU](https://www.elfa.se/sv/microcontroller-32bit-512kb-lqfp-st-stm32f411ret6/p/30170741?queryFromSuggest=true) 66.63 SEK  
 [LED](https://www.elfa.se/en/smd-led-645nm-0805-65cd-30ma-kingbright-kptd-2012surck/p/30118951) 0.9595 SEK  
 
+[6-pins](https://www.elfa.se/en/straight-male-pcb-header-through-hole-rows-contacts-54mm-pitch-rnd-connect-rnd-205-00627/p/30093647?q=&pos=17&origPos=101&origPageSize=10&track=true) 0,8435 SEK
+
 Insted of USB-C  
 [Straight 4-pin Header](https://www.elfa.se/en/pin-header-single-row-straight-pin-header-plug-positions-5mm-jst-b4b-xh-lf-sn/p/14301996?q=4-pin+header&pos=1&origPos=1&origPageSize=10&track=true) 2.01 SEK  
 [Mount](https://www.elfa.se/en/crimp-housing-receptacle-socket-positions-5mm-jst-xhp/p/14302034) 1.26 SEK  

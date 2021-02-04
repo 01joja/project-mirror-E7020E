@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -327,12 +327,12 @@ BOOT0
 $Comp
 L Connector:Conn_01x06_Male J?
 U 1 1 602DCAE5
-P 9350 4600
-F 0 "J?" H 9322 4482 50  0000 R CNN
-F 1 "SWD" H 9322 4573 50  0000 R CNN
-F 2 "" H 9350 4600 50  0001 C CNN
-F 3 "~" H 9350 4600 50  0001 C CNN
-	1    9350 4600
+P 7850 4300
+F 0 "J?" H 7822 4182 50  0000 R CNN
+F 1 "SWD" H 7822 4273 50  0000 R CNN
+F 2 "" H 7850 4300 50  0001 C CNN
+F 3 "~" H 7850 4300 50  0001 C CNN
+	1    7850 4300
 	-1   0    0    1   
 $EndComp
 Text HLabel 3450 1450 2    50   Output ~ 0
@@ -342,7 +342,7 @@ L Switch:SW_SPDT SW?
 U 1 1 602EAC7D
 P 3200 1450
 F 0 "SW?" H 3200 1735 50  0000 C CNN
-F 1 "SW_SPDT" H 3200 1644 50  0000 C CNN
+F 1 "RND 210-00662" H 3050 1650 50  0000 C CNN
 F 2 "" H 3200 1450 50  0001 C CNN
 F 3 "~" H 3200 1450 50  0001 C CNN
 	1    3200 1450
@@ -431,7 +431,7 @@ L Switch:SW_SPDT SW?
 U 1 1 60364EB9
 P 3150 2750
 F 0 "SW?" H 3150 3035 50  0000 C CNN
-F 1 "SW_SPDT" H 3150 2944 50  0000 C CNN
+F 1 "RND 210-00662" H 3150 2944 50  0000 C CNN
 F 2 "" H 3150 2750 50  0001 C CNN
 F 3 "~" H 3150 2750 50  0001 C CNN
 	1    3150 2750
@@ -569,4 +569,130 @@ F 3 "~" H 6850 1250 50  0001 C CNN
 	1    6850 1250
 	1    0    0    -1  
 $EndComp
+Text GLabel 4700 4250 0    50   Input ~ 0
+NRESET
+Wire Wire Line
+	4700 4250 4750 4250
+Wire Wire Line
+	4750 4450 4700 4450
+Wire Wire Line
+	4750 4550 4700 4550
+Text GLabel 4700 4450 0    50   Input ~ 0
+MISO
+Text GLabel 4700 4550 0    50   Output ~ 0
+MOSI
+Text GLabel 6200 2650 2    50   Input ~ 0
+MOTION
+Wire Wire Line
+	6200 2650 6150 2650
+Text GLabel 6200 3750 2    50   BiDi ~ 0
+DM
+Text GLabel 6200 3850 2    50   BiDi ~ 0
+DP
+Text GLabel 6200 5350 2    50   Output ~ 0
+SCK
+Text GLabel 6200 5450 2    50   Output ~ 0
+NCS
+Wire Wire Line
+	6200 5350 6150 5350
+Wire Wire Line
+	6200 5450 6150 5450
+Wire Wire Line
+	6200 4650 6150 4650
+Wire Wire Line
+	6200 4050 6150 4050
+Wire Wire Line
+	6200 3950 6150 3950
+Wire Wire Line
+	6200 3850 6150 3850
+Wire Wire Line
+	6200 3750 6150 3750
+Wire Wire Line
+	7650 4000 7400 4000
+Wire Wire Line
+	7400 4000 7400 3950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 601F634D
+P 7400 3950
+F 0 "#PWR?" H 7400 3800 50  0001 C CNN
+F 1 "+3.3V" H 7415 4123 50  0000 C CNN
+F 2 "" H 7400 3950 50  0001 C CNN
+F 3 "" H 7400 3950 50  0001 C CNN
+	1    7400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601F695B
+P 6900 4250
+F 0 "#PWR?" H 6900 4000 50  0001 C CNN
+F 1 "GND" H 6905 4077 50  0000 C CNN
+F 2 "" H 6900 4250 50  0001 C CNN
+F 3 "" H 6900 4250 50  0001 C CNN
+	1    6900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4200 7650 4200
+Wire Wire Line
+	6900 4250 6900 4200
+Text HLabel 7600 4400 0    50   Output ~ 0
+NRST
+Text HLabel 6200 4650 2    50   Output ~ 0
+SWO
+Text HLabel 7600 4500 0    50   Input ~ 0
+SWO
+Wire Wire Line
+	7600 4500 7650 4500
+Wire Wire Line
+	7650 4400 7600 4400
+Text HLabel 6200 3950 2    50   BiDi ~ 0
+SWDIO
+Text HLabel 7600 4300 0    50   BiDi ~ 0
+SWDIO
+Text HLabel 6200 4050 2    50   Input ~ 0
+SWCLK
+Text HLabel 7600 4100 0    50   Output ~ 0
+SWCLK
+Wire Wire Line
+	7600 4100 7650 4100
+Wire Wire Line
+	7600 4300 7650 4300
+NoConn ~ 6150 2750
+NoConn ~ 6150 2850
+NoConn ~ 6150 2950
+NoConn ~ 6150 3050
+NoConn ~ 6150 3150
+NoConn ~ 6150 3250
+NoConn ~ 6150 3350
+NoConn ~ 6150 3450
+NoConn ~ 6150 3550
+NoConn ~ 6150 3650
+NoConn ~ 6150 4150
+NoConn ~ 6150 4350
+NoConn ~ 6150 4450
+NoConn ~ 6150 4550
+NoConn ~ 6150 4750
+NoConn ~ 6150 4850
+NoConn ~ 6150 4950
+NoConn ~ 6150 5050
+NoConn ~ 6150 5150
+NoConn ~ 6150 5250
+NoConn ~ 6150 5550
+NoConn ~ 6150 5650
+NoConn ~ 6150 5750
+NoConn ~ 4750 5750
+NoConn ~ 4750 5650
+NoConn ~ 4750 5550
+NoConn ~ 4750 5450
+NoConn ~ 4750 5350
+NoConn ~ 4750 5250
+NoConn ~ 4750 5150
+NoConn ~ 4750 5050
+NoConn ~ 4750 4950
+NoConn ~ 4750 4850
+NoConn ~ 4750 4750
+NoConn ~ 4750 4650
+NoConn ~ 4750 4350
 $EndSCHEMATC
