@@ -19,6 +19,3 @@ Name *nuttali* is inspired from *Ochrotomys nuttalli* that is the *Latin* name f
 Public found on: [Public](https://github.com/01joja/project-mirror-E7020E)
 
 Course found on: [Course](https://gitlab.henriktjader.com/jonjac-6/nuttali-mirror-of-project)
-
-
-Hej
