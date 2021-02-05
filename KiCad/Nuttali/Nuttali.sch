@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -30,5 +30,11 @@ S 6250 1100 750  800
 U 601D470C
 F0 "USB_and_power" 50
 F1 "USB_and_Power.sch" 50
+$EndSheet
+$Sheet
+S 3450 2750 900  750 
+U 6022DC9B
+F0 "ButtonsAndWheel" 50
+F1 "ButtonsAndWheel.sch" 50
 $EndSheet
 $EndSCHEMATC
