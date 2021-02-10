@@ -242,11 +242,9 @@ Wire Wire Line
 Text Notes 2250 3900 0    50   ~ 0
 2*(Cload-Cstray)*2^(18-6)= \n24pF = 22pF
 $Comp
-L Nuttali-rescue:Crystal-Device Y?
+L Device:Crystal Y1
 U 1 1 602B614B
 P 4300 3950
-AR Path="/602B614B" Ref="Y?"  Part="1" 
-AR Path="/6022F0F9/602B614B" Ref="Y1"  Part="1" 
 F 0 "Y1" V 4200 3700 50  0000 L CNN
 F 1 "16Mhz" V 4300 3550 50  0000 L CNN
 F 2 "" H 4300 3950 50  0001 C CNN
@@ -327,14 +325,12 @@ Wire Wire Line
 Text HLabel 4650 2850 0    50   Input ~ 0
 BOOT0
 $Comp
-L Nuttali-rescue:Conn_01x06_Male-Connector J?
+L Connector:Conn_01x06_Male J1
 U 1 1 602DCAE5
 P 7850 4300
-AR Path="/602DCAE5" Ref="J?"  Part="1" 
-AR Path="/6022F0F9/602DCAE5" Ref="J1"  Part="1" 
 F 0 "J1" H 7822 4182 50  0000 R CNN
 F 1 "SWD" H 7822 4273 50  0000 R CNN
-F 2 "" H 7850 4300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7850 4300 50  0001 C CNN
 F 3 "~" H 7850 4300 50  0001 C CNN
 	1    7850 4300
 	-1   0    0    1   
@@ -342,14 +338,12 @@ $EndComp
 Text HLabel 3450 1450 2    50   Output ~ 0
 BOOT0
 $Comp
-L Nuttali-rescue:SW_SPDT-Switch SW?
+L Switch:SW_SPDT SW2
 U 1 1 602EAC7D
 P 3200 1450
-AR Path="/602EAC7D" Ref="SW?"  Part="1" 
-AR Path="/6022F0F9/602EAC7D" Ref="SW2"  Part="1" 
 F 0 "SW2" H 3200 1735 50  0000 C CNN
 F 1 "RND 210-00662" H 3050 1650 50  0000 C CNN
-F 2 "" H 3200 1450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3200 1450 50  0001 C CNN
 F 3 "~" H 3200 1450 50  0001 C CNN
 	1    3200 1450
 	-1   0    0    -1  
@@ -361,14 +355,12 @@ Wire Wire Line
 Wire Wire Line
 	3000 1550 3000 1700
 $Comp
-L Nuttali-rescue:R-Device R?
+L Device:R R1
 U 1 1 602EF78F
 P 3000 1850
-AR Path="/602EF78F" Ref="R?"  Part="1" 
-AR Path="/6022F0F9/602EF78F" Ref="R1"  Part="1" 
 F 0 "R1" V 2900 1850 50  0000 C CNN
 F 1 "10k" V 2800 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder" V 2930 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2930 1850 50  0001 C CNN
 F 3 "~" H 3000 1850 50  0001 C CNN
 	1    3000 1850
 	-1   0    0    1   
@@ -434,24 +426,10 @@ NRST
 Wire Wire Line
 	3350 3200 2950 3200
 Connection ~ 2950 3200
-$Comp
-L Nuttali-rescue:SW_SPDT-Switch SW?
-U 1 1 60364EB9
-P 1400 2700
-AR Path="/60364EB9" Ref="SW?"  Part="1" 
-AR Path="/6022F0F9/60364EB9" Ref="SW1"  Part="1" 
-F 0 "SW1" H 1400 2985 50  0000 C CNN
-F 1 "RND 210-00662" H 1400 2894 50  0000 C CNN
-F 2 "" H 1400 2700 50  0001 C CNN
-F 3 "~" H 1400 2700 50  0001 C CNN
-	1    1400 2700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	3350 2750 3350 2900
+	3350 2750 3350 2850
 Wire Wire Line
 	2950 2850 2950 3200
-NoConn ~ 2950 2650
 Connection ~ 5550 1100
 Connection ~ 6850 1400
 Wire Wire Line
@@ -621,11 +599,9 @@ Wire Wire Line
 Wire Wire Line
 	7400 4000 7400 3950
 $Comp
-L Nuttali-rescue:+3.3V-power #PWR?
+L power:+3.3V #PWR0114
 U 1 1 601F634D
 P 7400 3950
-AR Path="/601F634D" Ref="#PWR?"  Part="1" 
-AR Path="/6022F0F9/601F634D" Ref="#PWR0114"  Part="1" 
 F 0 "#PWR0114" H 7400 3800 50  0001 C CNN
 F 1 "+3.3V" H 7415 4123 50  0000 C CNN
 F 2 "" H 7400 3950 50  0001 C CNN
@@ -634,11 +610,9 @@ F 3 "" H 7400 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Nuttali-rescue:GND-power #PWR?
+L power:GND #PWR0115
 U 1 1 601F695B
 P 6900 4250
-AR Path="/601F695B" Ref="#PWR?"  Part="1" 
-AR Path="/6022F0F9/601F695B" Ref="#PWR0115"  Part="1" 
 F 0 "#PWR0115" H 6900 4000 50  0001 C CNN
 F 1 "GND" H 6905 4077 50  0000 C CNN
 F 2 "" H 6900 4250 50  0001 C CNN
@@ -708,4 +682,18 @@ NoConn ~ 4750 4850
 NoConn ~ 4750 4750
 NoConn ~ 4750 4650
 NoConn ~ 4750 4350
+$Comp
+L Switch:SW_DPST_x2 SW1
+U 1 1 60245B0E
+P 3150 2850
+F 0 "SW1" H 3150 3085 50  0000 C CNN
+F 1 "SW_DPST_x2" H 3150 2994 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 3150 2850 50  0001 C CNN
+F 3 "~" H 3150 2850 50  0001 C CNN
+	1    3150 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 2850
+Wire Wire Line
+	3350 2850 3350 2900
 $EndSCHEMATC
