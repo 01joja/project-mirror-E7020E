@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Switch:SW_MEC_5G SW3
-U 1 1 6022E46F
-P 1350 1350
-F 0 "SW3" H 1350 1635 50  0000 C CNN
-F 1 "SW_MEC_5G" H 1350 1544 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1350 1550 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1350 1550 50  0001 C CNN
-	1    1350 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0140
 U 1 1 6023138D
 P 1800 800
@@ -92,17 +81,6 @@ F 1 "GND" H 1805 1677 50  0000 C CNN
 F 2 "" H 1800 1850 50  0001 C CNN
 F 3 "" H 1800 1850 50  0001 C CNN
 	1    1800 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_MEC_5G SW4
-U 1 1 602440AC
-P 1350 3050
-F 0 "SW4" H 1350 3335 50  0000 C CNN
-F 1 "SW_MEC_5G" H 1350 3244 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1350 3250 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1350 3250 50  0001 C CNN
-	1    1350 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -176,17 +154,6 @@ F 3 "" H 1800 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_MEC_5G SW5
-U 1 1 602454EE
-P 1600 5150
-F 0 "SW5" H 1600 5435 50  0000 C CNN
-F 1 "SW_MEC_5G" H 1600 5344 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1600 5350 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1600 5350 50  0001 C CNN
-	1    1600 5150
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3.3V #PWR0146
 U 1 1 602454F4
 P 1300 5150
@@ -215,17 +182,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 5150 2250 5150
 $Comp
-L Switch:SW_MEC_5G SW6
-U 1 1 60278217
-P 1600 5850
-F 0 "SW6" H 1600 6135 50  0000 C CNN
-F 1 "SW_MEC_5G" H 1600 6044 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1600 6050 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1600 6050 50  0001 C CNN
-	1    1600 5850
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3.3V #PWR0147
 U 1 1 6027821D
 P 1300 5850
@@ -251,23 +207,10 @@ Wire Wire Line
 	1300 5850 1400 5850
 Wire Wire Line
 	1800 5850 1850 5850
-Wire Wire Line
-	2150 5850 2250 5850
 Text GLabel 2250 5150 2    50   Output ~ 0
 SideFront
 Text GLabel 2250 5850 2    50   Output ~ 0
 SideBack
-$Comp
-L Switch:SW_MEC_5G SW7
-U 1 1 602BC224
-P 4700 2450
-F 0 "SW7" H 4700 2735 50  0000 C CNN
-F 1 "SW_MEC_5G" H 4700 2644 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 4700 2650 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4700 2650 50  0001 C CNN
-	1    4700 2450
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:+3.3V #PWR0148
 U 1 1 602BC22A
@@ -299,58 +242,6 @@ Wire Wire Line
 Text GLabel 5350 2450 2    50   Output ~ 0
 WheelButton
 $Comp
-L Switch:SW_MEC_5G SW9
-U 1 1 602BD719
-P 7850 3800
-F 0 "SW9" H 7850 4085 50  0000 C CNN
-F 1 "SW_MEC_5G" H 7850 3994 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 7850 4000 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7850 4000 50  0001 C CNN
-	1    7850 3800
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0149
-U 1 1 602BD71F
-P 7550 3800
-F 0 "#PWR0149" H 7550 3650 50  0001 C CNN
-F 1 "+3.3V" H 7565 3973 50  0000 C CNN
-F 2 "" H 7550 3800 50  0001 C CNN
-F 3 "" H 7550 3800 50  0001 C CNN
-	1    7550 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 602BD725
-P 8250 3800
-F 0 "R14" H 8320 3846 50  0000 L CNN
-F 1 "10k" H 8320 3755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8180 3800 50  0001 C CNN
-F 3 "~" H 8250 3800 50  0001 C CNN
-	1    8250 3800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7550 3800 7650 3800
-Wire Wire Line
-	8050 3800 8100 3800
-Wire Wire Line
-	8400 3800 8500 3800
-Text GLabel 8500 3800 2    50   Output ~ 0
-DPI
-$Comp
-L Switch:SW_MEC_5G SW10
-U 1 1 602BED69
-P 9450 3800
-F 0 "SW10" H 9450 4085 50  0000 C CNN
-F 1 "SW_MEC_5G" H 9450 3994 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 9450 4000 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 9450 4000 50  0001 C CNN
-	1    9450 3800
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3.3V #PWR0150
 U 1 1 602BED6F
 P 9150 3800
@@ -381,17 +272,6 @@ Wire Wire Line
 Text GLabel 10100 3800 2    50   Output ~ 0
 Turbo
 $Comp
-L Device:LED D3
-U 1 1 602CAB79
-P 8150 3350
-F 0 "D3" H 8143 3095 50  0000 C CNN
-F 1 "LED" H 8143 3186 50  0000 C CNN
-F 2 "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 8150 3350 50  0001 C CNN
-F 3 "~" H 8150 3350 50  0001 C CNN
-	1    8150 3350
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:LED D4
 U 1 1 602CBCDE
 P 9750 3350
@@ -401,17 +281,6 @@ F 2 "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 9750 3350 50  0001
 F 3 "~" H 9750 3350 50  0001 C CNN
 	1    9750 3350
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0151
-U 1 1 602CCA62
-P 8750 3400
-F 0 "#PWR0151" H 8750 3150 50  0001 C CNN
-F 1 "GND" H 8755 3227 50  0000 C CNN
-F 2 "" H 8750 3400 50  0001 C CNN
-F 3 "" H 8750 3400 50  0001 C CNN
-	1    8750 3400
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0152
@@ -424,12 +293,6 @@ F 3 "" H 10250 3400 50  0001 C CNN
 	1    10250 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 3350 0    50   Input ~ 0
-DPI_LED
-Wire Wire Line
-	7800 3350 8000 3350
-Wire Wire Line
-	8300 3350 8750 3350
 Text GLabel 9450 3350 0    50   Input ~ 0
 Turbo_LED
 Wire Wire Line
@@ -438,18 +301,12 @@ Wire Wire Line
 	9900 3350 10250 3350
 Wire Wire Line
 	10250 3400 10250 3350
-Wire Wire Line
-	8750 3400 8750 3350
 Text GLabel 2350 3050 2    50   Output ~ 0
 LeftB
 Text GLabel 2350 1350 2    50   Output ~ 0
 RightB
 Wire Notes Line
 	550  4250 3100 4250
-Wire Notes Line
-	3100 550  3100 7700
-Wire Notes Line
-	7000 550  7000 6500
 Text Notes 700  4050 0    50   ~ 0
 Left and right click
 Text Notes 700  4450 0    50   ~ 0
@@ -562,4 +419,74 @@ Text GLabel 3950 3200 0    50   Input ~ 0
 WheelA
 Text GLabel 3950 4200 0    50   Input ~ 0
 WheelB
+$Comp
+L Switch:SW_Push SW3
+U 1 1 6026C8AE
+P 1350 1350
+F 0 "SW3" H 1350 1635 50  0000 C CNN
+F 1 "SW_Push" H 1350 1544 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 1350 1550 50  0001 C CNN
+F 3 "~" H 1350 1550 50  0001 C CNN
+	1    1350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 6026D38D
+P 1350 3050
+F 0 "SW4" H 1350 3335 50  0000 C CNN
+F 1 "SW_Push" H 1350 3244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 1350 3250 50  0001 C CNN
+F 3 "~" H 1350 3250 50  0001 C CNN
+	1    1350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 6026DDAA
+P 1600 5150
+F 0 "SW5" H 1600 5435 50  0000 C CNN
+F 1 "SW_Push" H 1600 5344 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 1600 5350 50  0001 C CNN
+F 3 "~" H 1600 5350 50  0001 C CNN
+	1    1600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 6026F191
+P 1600 5850
+F 0 "SW6" H 1600 6135 50  0000 C CNN
+F 1 "SW_Push" H 1600 6044 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 1600 6050 50  0001 C CNN
+F 3 "~" H 1600 6050 50  0001 C CNN
+	1    1600 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 6026F8D9
+P 4700 2450
+F 0 "SW7" H 4700 2735 50  0000 C CNN
+F 1 "SW_Push" H 4700 2644 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 602726D9
+P 9450 3800
+F 0 "SW10" H 9450 4085 50  0000 C CNN
+F 1 "SW_Push" H 9450 3994 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 9450 4000 50  0001 C CNN
+F 3 "~" H 9450 4000 50  0001 C CNN
+	1    9450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5850 2250 5850
+Wire Notes Line
+	3100 550  3100 7700
 $EndSCHEMATC

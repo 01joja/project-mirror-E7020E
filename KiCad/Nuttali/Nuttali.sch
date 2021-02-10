@@ -20,13 +20,13 @@ F0 "MCU" 50
 F1 "MCU.sch" 50
 $EndSheet
 $Sheet
-S 6600 2500 1250 1000
+S 6650 2500 1250 1000
 U 601B1425
 F0 "PMW3389" 50
 F1 "file601B1424.sch" 50
 $EndSheet
 $Sheet
-S 5550 1100 750  800 
+S 5450 1250 750  800 
 U 601D470C
 F0 "USB_and_power" 50
 F1 "USB_and_Power.sch" 50
