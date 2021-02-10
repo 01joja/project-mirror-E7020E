@@ -19,7 +19,7 @@ U 1 1 6022E46F
 P 1350 1350
 F 0 "SW3" H 1350 1635 50  0000 C CNN
 F 1 "SW_MEC_5G" H 1350 1544 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 1350 1550 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1350 1550 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1350 1550 50  0001 C CNN
 	1    1350 1350
 	1    0    0    -1  
@@ -100,7 +100,7 @@ U 1 1 602440AC
 P 1350 3050
 F 0 "SW4" H 1350 3335 50  0000 C CNN
 F 1 "SW_MEC_5G" H 1350 3244 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 1350 3250 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1350 3250 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1350 3250 50  0001 C CNN
 	1    1350 3050
 	1    0    0    -1  
@@ -181,7 +181,7 @@ U 1 1 602454EE
 P 1600 5150
 F 0 "SW5" H 1600 5435 50  0000 C CNN
 F 1 "SW_MEC_5G" H 1600 5344 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 1600 5350 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1600 5350 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1600 5350 50  0001 C CNN
 	1    1600 5150
 	-1   0    0    1   
@@ -220,7 +220,7 @@ U 1 1 60278217
 P 1600 5850
 F 0 "SW6" H 1600 6135 50  0000 C CNN
 F 1 "SW_MEC_5G" H 1600 6044 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 1600 6050 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 1600 6050 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1600 6050 50  0001 C CNN
 	1    1600 5850
 	-1   0    0    1   
@@ -263,7 +263,7 @@ U 1 1 602BC224
 P 4700 2450
 F 0 "SW7" H 4700 2735 50  0000 C CNN
 F 1 "SW_MEC_5G" H 4700 2644 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 4700 2650 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 4700 2650 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4700 2650 50  0001 C CNN
 	1    4700 2450
 	-1   0    0    1   
@@ -304,7 +304,7 @@ U 1 1 602BD719
 P 7850 3800
 F 0 "SW9" H 7850 4085 50  0000 C CNN
 F 1 "SW_MEC_5G" H 7850 3994 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 7850 4000 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 7850 4000 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7850 4000 50  0001 C CNN
 	1    7850 3800
 	-1   0    0    1   
@@ -345,7 +345,7 @@ U 1 1 602BED69
 P 9450 3800
 F 0 "SW10" H 9450 4085 50  0000 C CNN
 F 1 "SW_MEC_5G" H 9450 3994 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm" H 9450 4000 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 9450 4000 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 9450 4000 50  0001 C CNN
 	1    9450 3800
 	-1   0    0    1   

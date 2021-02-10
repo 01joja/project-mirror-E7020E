@@ -303,7 +303,7 @@ U 1 1 60204BFD
 P 4950 3850
 F 0 "TP1" H 5008 3968 50  0000 L CNN
 F 1 "TestPoint" H 5008 3877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5150 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5150 3850 50  0001 C CNN
 F 3 "~" H 5150 3850 50  0001 C CNN
 	1    4950 3850
 	1    0    0    -1  
@@ -325,7 +325,7 @@ U 1 1 6020633C
 P 5400 3850
 F 0 "TP2" H 5458 3968 50  0000 L CNN
 F 1 "TestPoint" H 5458 3877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5600 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5600 3850 50  0001 C CNN
 F 3 "~" H 5600 3850 50  0001 C CNN
 	1    5400 3850
 	1    0    0    -1  
@@ -336,7 +336,7 @@ U 1 1 602068E2
 P 5900 3850
 F 0 "TP3" H 5958 3968 50  0000 L CNN
 F 1 "TestPoint" H 5958 3877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 6100 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6100 3850 50  0001 C CNN
 F 3 "~" H 6100 3850 50  0001 C CNN
 	1    5900 3850
 	1    0    0    -1  
@@ -351,7 +351,7 @@ U 1 1 602082AE
 P 6350 3850
 F 0 "TP4" H 6408 3968 50  0000 L CNN
 F 1 "TestPoint" H 6408 3877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 6550 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6550 3850 50  0001 C CNN
 F 3 "~" H 6550 3850 50  0001 C CNN
 	1    6350 3850
 	1    0    0    -1  
@@ -362,7 +362,7 @@ U 1 1 6020880C
 P 6800 3850
 F 0 "TP5" H 6858 3968 50  0000 L CNN
 F 1 "TestPoint" H 6858 3877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 7000 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7000 3850 50  0001 C CNN
 F 3 "~" H 7000 3850 50  0001 C CNN
 	1    6800 3850
 	1    0    0    -1  
@@ -379,7 +379,7 @@ U 1 1 602091FD
 P 7250 3850
 F 0 "TP6" H 7308 3968 50  0000 L CNN
 F 1 "TestPoint" H 7308 3877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 7450 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7450 3850 50  0001 C CNN
 F 3 "~" H 7450 3850 50  0001 C CNN
 	1    7250 3850
 	1    0    0    -1  
