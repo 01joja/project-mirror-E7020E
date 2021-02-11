@@ -154,17 +154,6 @@ F 3 "" H 1800 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0146
-U 1 1 602454F4
-P 1300 5150
-F 0 "#PWR0146" H 1300 5000 50  0001 C CNN
-F 1 "+3.3V" H 1315 5323 50  0000 C CNN
-F 2 "" H 1300 5150 50  0001 C CNN
-F 3 "" H 1300 5150 50  0001 C CNN
-	1    1300 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R9
 U 1 1 602454FA
 P 2000 5150
@@ -176,40 +165,36 @@ F 3 "~" H 2000 5150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1300 5150 1400 5150
-Wire Wire Line
 	1800 5150 1850 5150
 Wire Wire Line
 	2150 5150 2250 5150
 $Comp
 L power:+3.3V #PWR0147
 U 1 1 6027821D
-P 1300 5850
-F 0 "#PWR0147" H 1300 5700 50  0001 C CNN
-F 1 "+3.3V" H 1315 6023 50  0000 C CNN
-F 2 "" H 1300 5850 50  0001 C CNN
-F 3 "" H 1300 5850 50  0001 C CNN
-	1    1300 5850
+P 1250 6550
+F 0 "#PWR0147" H 1250 6400 50  0001 C CNN
+F 1 "+3.3V" H 1265 6723 50  0000 C CNN
+F 2 "" H 1250 6550 50  0001 C CNN
+F 3 "" H 1250 6550 50  0001 C CNN
+	1    1250 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 60278223
-P 2000 5850
-F 0 "R10" H 2070 5896 50  0000 L CNN
-F 1 "10k" H 2070 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1930 5850 50  0001 C CNN
-F 3 "~" H 2000 5850 50  0001 C CNN
-	1    2000 5850
+P 1950 5600
+F 0 "R10" H 2020 5646 50  0000 L CNN
+F 1 "10k" H 2020 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1880 5600 50  0001 C CNN
+F 3 "~" H 1950 5600 50  0001 C CNN
+	1    1950 5600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1300 5850 1400 5850
-Wire Wire Line
-	1800 5850 1850 5850
-Text GLabel 2250 5150 2    50   Output ~ 0
+	1750 5600 1800 5600
+Text GLabel 2050 6350 0    50   Output ~ 0
 SideFront
-Text GLabel 2250 5850 2    50   Output ~ 0
+Text GLabel 2050 6450 0    50   Output ~ 0
 SideBack
 $Comp
 L power:+3.3V #PWR0148
@@ -455,12 +440,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW6
 U 1 1 6026F191
-P 1600 5850
-F 0 "SW6" H 1600 6135 50  0000 C CNN
-F 1 "SW_Push" H 1600 6044 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 1600 6050 50  0001 C CNN
-F 3 "~" H 1600 6050 50  0001 C CNN
-	1    1600 5850
+P 1550 5600
+F 0 "SW6" H 1550 5885 50  0000 C CNN
+F 1 "SW_Push" H 1550 5794 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 1550 5800 50  0001 C CNN
+F 3 "~" H 1550 5800 50  0001 C CNN
+	1    1550 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -486,7 +471,54 @@ F 3 "~" H 9450 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 5850 2250 5850
+	2100 5600 2200 5600
 Wire Notes Line
 	3100 550  3100 7700
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 6025B611
+P 2750 5300
+F 0 "J4" H 2858 5581 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2858 5490 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2750 5300 50  0001 C CNN
+F 3 "~" H 2750 5300 50  0001 C CNN
+	1    2750 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 5200 2250 5150
+Wire Wire Line
+	2250 5200 2550 5200
+Wire Wire Line
+	2200 5600 2200 5300
+Wire Wire Line
+	2200 5300 2550 5300
+Wire Wire Line
+	2550 5400 2550 5850
+Wire Wire Line
+	2550 5850 950  5850
+Wire Wire Line
+	950  5850 950  5600
+Connection ~ 950  5600
+Wire Wire Line
+	950  5600 950  5150
+Wire Wire Line
+	950  5600 1350 5600
+Wire Wire Line
+	950  5150 1400 5150
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 6029AD59
+P 2250 6450
+F 0 "J3" H 2358 6731 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2358 6640 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2250 6450 50  0001 C CNN
+F 3 "~" H 2250 6450 50  0001 C CNN
+	1    2250 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 6550 1250 6550
+Text Notes 500  6000 0    50   ~ 0
+To connect the side buttons since they will be on different pcb
 $EndSCHEMATC
