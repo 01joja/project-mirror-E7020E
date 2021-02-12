@@ -30,6 +30,10 @@ fp-info-cache
 *.xml
 *.csv
 
+*.kicad_pcb
+*.pro
+*.sch
+
 # /\ /\ /\ /\ /\
 # || || || || ||
 # Gitignore for KiCad
