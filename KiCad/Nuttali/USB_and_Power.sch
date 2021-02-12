@@ -129,17 +129,6 @@ F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 5250 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:AP131-15 U4
-U 1 1 602779E7
-P 5050 2750
-F 0 "U4" H 5050 3092 50  0000 C CNN
-F 1 "AP131-15" H 5050 3001 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5050 3075 50  0001 C CNN
-F 3 "http://www.diodes.com/_files/datasheets/AP131.pdf" H 5050 2750 50  0001 C CNN
-	1    5050 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C22
 U 1 1 601D7AEF
 P 2350 1950
@@ -267,8 +256,6 @@ Connection ~ 4600 2750
 Wire Wire Line
 	4600 2750 4600 2800
 Wire Wire Line
-	5350 2750 5350 2950
-Wire Wire Line
 	5350 2950 5600 2950
 Wire Wire Line
 	5600 2950 5600 3050
@@ -285,8 +272,6 @@ Wire Wire Line
 	4600 3100 4600 3350
 Wire Wire Line
 	4600 3350 5050 3350
-Wire Wire Line
-	5050 3050 5050 3350
 Connection ~ 5050 3350
 Wire Wire Line
 	5050 3350 5600 3350
@@ -445,4 +430,19 @@ Wire Wire Line
 	4600 1550 4600 1650
 Wire Wire Line
 	4600 2000 4600 1950
+Wire Wire Line
+	5350 2750 5350 2950
+Wire Wire Line
+	5050 3050 5050 3350
+$Comp
+L Regulator_Linear:AP131-15 U4
+U 1 1 602779E7
+P 5050 2750
+F 0 "U4" H 5050 3092 50  0000 C CNN
+F 1 "AP131-15" H 5050 3001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5050 3075 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/AP131.pdf" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

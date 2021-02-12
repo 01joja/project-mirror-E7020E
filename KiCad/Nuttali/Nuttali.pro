@@ -1,4 +1,4 @@
-update=tor 11 feb 2021 17:42:03
+update=02/12/21 11:38:55
 version=1
 last_client=kicad
 [general]
@@ -258,6 +258,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
+Name=powe_smal
+Clearance=0.2
+TrackWidth=0.4
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
 Name=smal
 Clearance=0.2
 TrackWidth=0.2
