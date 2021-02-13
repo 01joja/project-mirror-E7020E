@@ -27,7 +27,7 @@ F 3 "~" H 1400 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0126
+L Nuttali-rescue:+5V-power #PWR0126
 U 1 1 6025442C
 P 1850 1500
 F 0 "#PWR0126" H 1850 1350 50  0001 C CNN
@@ -42,7 +42,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 1600 1850 1500
 $Comp
-L Power_Protection:USBLC6-2P6 U3
+L Nuttali-rescue:USBLC6-2P6-Power_Protection U3
 U 1 1 60257671
 P 3450 1800
 F 0 "U3" V 3100 2400 50  0000 C CNN
@@ -69,7 +69,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 2250 3350 2200
 $Comp
-L power:+5V #PWR0127
+L Nuttali-rescue:+5V-power #PWR0127
 U 1 1 60263555
 P 2350 1600
 F 0 "#PWR0127" H 2350 1450 50  0001 C CNN
@@ -82,7 +82,7 @@ $EndComp
 Wire Wire Line
 	1600 1900 1850 1900
 $Comp
-L power:GND #PWR0128
+L Nuttali-rescue:GND-power #PWR0128
 U 1 1 60263C21
 P 1850 1900
 F 0 "#PWR0128" H 1850 1650 50  0001 C CNN
@@ -95,7 +95,7 @@ $EndComp
 Wire Wire Line
 	3850 1800 3900 1800
 $Comp
-L power:GND #PWR0129
+L Nuttali-rescue:GND-power #PWR0129
 U 1 1 6026528C
 P 3900 1800
 F 0 "#PWR0129" H 3900 1550 50  0001 C CNN
@@ -118,7 +118,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 2250 3550 2200
 $Comp
-L Regulator_Linear:AP1117-15 U5
+L Nuttali-rescue:AP1117-15-Regulator_Linear U5
 U 1 1 60275CC9
 P 5150 1550
 F 0 "U5" H 5150 1792 50  0000 C CNN
@@ -129,7 +129,7 @@ F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 5250 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C22
+L Nuttali-rescue:C-Device C22
 U 1 1 601D7AEF
 P 2350 1950
 F 0 "C22" H 2465 1996 50  0000 L CNN
@@ -151,7 +151,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 2000 2950 2000
 $Comp
-L power:GND #PWR0130
+L Nuttali-rescue:GND-power #PWR0130
 U 1 1 601DAD67
 P 2950 2000
 F 0 "#PWR0130" H 2950 1750 50  0001 C CNN
@@ -162,7 +162,7 @@ F 3 "" H 2950 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
+L Nuttali-rescue:C-Device C25
 U 1 1 601DF5EF
 P 5700 1800
 F 0 "C25" H 5815 1846 50  0000 L CNN
@@ -173,7 +173,7 @@ F 3 "~" H 5700 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C24
+L Nuttali-rescue:C-Device C24
 U 1 1 601E048D
 P 4600 2950
 F 0 "C24" H 4300 3000 50  0000 L CNN
@@ -184,7 +184,7 @@ F 3 "~" H 4600 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C26
+L Nuttali-rescue:C-Device C26
 U 1 1 601E088B
 P 5950 2800
 F 0 "C26" H 6065 2846 50  0000 L CNN
@@ -211,7 +211,7 @@ Connection ~ 5150 2000
 Wire Wire Line
 	5150 2000 5700 2000
 $Comp
-L power:GND #PWR0131
+L Nuttali-rescue:GND-power #PWR0131
 U 1 1 601E6056
 P 5150 2000
 F 0 "#PWR0131" H 5150 1750 50  0001 C CNN
@@ -222,7 +222,7 @@ F 3 "" H 5150 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L Nuttali-rescue:R-Device R4
 U 1 1 601E6FBD
 P 5600 2800
 F 0 "R4" H 5670 2846 50  0000 L CNN
@@ -233,7 +233,7 @@ F 3 "~" H 5600 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L Nuttali-rescue:R-Device R5
 U 1 1 601E7C9F
 P 5600 3200
 F 0 "R5" H 5670 3246 50  0000 L CNN
@@ -276,7 +276,7 @@ Connection ~ 5050 3350
 Wire Wire Line
 	5050 3350 5600 3350
 $Comp
-L power:GND #PWR0132
+L Nuttali-rescue:GND-power #PWR0132
 U 1 1 601F167A
 P 5050 3350
 F 0 "#PWR0132" H 5050 3100 50  0001 C CNN
@@ -287,7 +287,7 @@ F 3 "" H 5050 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0133
+L Nuttali-rescue:+5V-power #PWR0133
 U 1 1 601F267E
 P 4600 1500
 F 0 "#PWR0133" H 4600 1350 50  0001 C CNN
@@ -298,7 +298,7 @@ F 3 "" H 4600 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0134
+L Nuttali-rescue:+5V-power #PWR0134
 U 1 1 601F2F4A
 P 4600 2600
 F 0 "#PWR0134" H 4600 2450 50  0001 C CNN
@@ -311,7 +311,7 @@ $EndComp
 Wire Wire Line
 	5950 2950 5950 3000
 $Comp
-L power:GND #PWR0135
+L Nuttali-rescue:GND-power #PWR0135
 U 1 1 601F601B
 P 5950 3000
 F 0 "#PWR0135" H 5950 2750 50  0001 C CNN
@@ -336,7 +336,7 @@ F 3 "" H 5950 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0137
+L Nuttali-rescue:+3.3V-power #PWR0137
 U 1 1 601F8551
 P 5700 1500
 F 0 "#PWR0137" H 5700 1350 50  0001 C CNN
@@ -347,7 +347,7 @@ F 3 "" H 5700 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
+L Nuttali-rescue:LED-Device D1
 U 1 1 60219D13
 P 6250 2650
 F 0 "D1" H 6243 2395 50  0000 C CNN
@@ -362,7 +362,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 2650 6500 2650
 $Comp
-L power:GND #PWR0138
+L Nuttali-rescue:GND-power #PWR0138
 U 1 1 6021DE9A
 P 6500 2650
 F 0 "#PWR0138" H 6500 2400 50  0001 C CNN
@@ -375,7 +375,7 @@ $EndComp
 Wire Wire Line
 	5700 1550 5700 1650
 $Comp
-L Device:R R6
+L Nuttali-rescue:R-Device R6
 U 1 1 60221CF5
 P 6200 1550
 F 0 "R6" V 6400 1500 50  0000 L CNN
@@ -386,7 +386,7 @@ F 3 "~" H 6200 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D2
+L Nuttali-rescue:LED-Device D2
 U 1 1 60223427
 P 6550 1550
 F 0 "D2" H 6543 1295 50  0000 C CNN
@@ -403,7 +403,7 @@ Wire Wire Line
 Wire Wire Line
 	6700 1550 6700 1600
 $Comp
-L power:GND #PWR0139
+L Nuttali-rescue:GND-power #PWR0139
 U 1 1 60225F08
 P 6700 1600
 F 0 "#PWR0139" H 6700 1350 50  0001 C CNN
@@ -416,7 +416,7 @@ $EndComp
 Wire Wire Line
 	5700 2000 5700 1950
 $Comp
-L Device:C C23
+L Nuttali-rescue:C-Device C23
 U 1 1 6022CD87
 P 4600 1800
 F 0 "C23" H 4715 1846 50  0000 L CNN
@@ -435,7 +435,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3050 5050 3350
 $Comp
-L Regulator_Linear:AP131-15 U4
+L Nuttali-rescue:AP131-15-Regulator_Linear U4
 U 1 1 602779E7
 P 5050 2750
 F 0 "U4" H 5050 3092 50  0000 C CNN

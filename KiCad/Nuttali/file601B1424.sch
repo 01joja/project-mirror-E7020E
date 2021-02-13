@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+3.3V #PWR0125
+L Nuttali-rescue:+3.3V-power #PWR0125
 U 1 1 601C8D0A
 P 5400 1850
 F 0 "#PWR0125" H 5400 1700 50  0001 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 5400 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R2
+L Nuttali-rescue:R_Small-Device R2
 U 1 1 601C973A
 P 5400 2100
 F 0 "R2" H 5341 2054 50  0000 R CNN
@@ -40,7 +40,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2800 5400 2200
 $Comp
-L Connector:TestPoint TP6
+L Nuttali-rescue:TestPoint-Connector TP6
 U 1 1 602091FD
 P 7250 3850
 F 0 "TP6" H 7308 3968 50  0000 L CNN
@@ -57,7 +57,7 @@ MOTION
 Text GLabel 6350 3850 3    50   UnSpc ~ 0
 SCK
 $Comp
-L Connector:TestPoint TP5
+L Nuttali-rescue:TestPoint-Connector TP5
 U 1 1 6020880C
 P 6800 3850
 F 0 "TP5" H 6858 3968 50  0000 L CNN
@@ -68,7 +68,7 @@ F 3 "~" H 7000 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP4
+L Nuttali-rescue:TestPoint-Connector TP4
 U 1 1 602082AE
 P 6350 3850
 F 0 "TP4" H 6408 3968 50  0000 L CNN
@@ -83,7 +83,7 @@ MOSI
 Text GLabel 5400 3850 3    50   UnSpc ~ 0
 MISO
 $Comp
-L Connector:TestPoint TP3
+L Nuttali-rescue:TestPoint-Connector TP3
 U 1 1 602068E2
 P 5900 3850
 F 0 "TP3" H 5958 3968 50  0000 L CNN
@@ -94,7 +94,7 @@ F 3 "~" H 6100 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L Nuttali-rescue:TestPoint-Connector TP2
 U 1 1 6020633C
 P 5400 3850
 F 0 "TP2" H 5458 3968 50  0000 L CNN
@@ -105,7 +105,7 @@ F 3 "~" H 5600 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0124
+L Nuttali-rescue:GND-power #PWR0124
 U 1 1 60205A5B
 P 4950 3850
 F 0 "#PWR0124" H 4950 3600 50  0001 C CNN
@@ -116,7 +116,7 @@ F 3 "" H 4950 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP1
+L Nuttali-rescue:TestPoint-Connector TP1
 U 1 1 60204BFD
 P 4950 3850
 F 0 "TP1" H 5008 3968 50  0000 L CNN
@@ -145,7 +145,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 3100 4150 3100
 $Comp
-L power:GND #PWR0123
+L Nuttali-rescue:GND-power #PWR0123
 U 1 1 601D9FB5
 P 4150 3250
 F 0 "#PWR0123" H 4150 3000 50  0001 C CNN
@@ -168,7 +168,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 1850 3200 1850
 $Comp
-L power:GND #PWR0122
+L Nuttali-rescue:GND-power #PWR0122
 U 1 1 601CF8BA
 P 2950 2300
 F 0 "#PWR0122" H 2950 2050 50  0001 C CNN
@@ -180,7 +180,7 @@ F 3 "" H 2950 2300 50  0001 C CNN
 $EndComp
 Connection ~ 2950 2150
 $Comp
-L Device:C_Small C17
+L Nuttali-rescue:C_Small-Device C17
 U 1 1 601CE396
 P 2950 2050
 F 0 "C17" H 3042 2096 50  0000 L CNN
@@ -191,7 +191,7 @@ F 3 "~" H 2950 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C14
+L Nuttali-rescue:C_Small-Device C14
 U 1 1 601CD863
 P 2450 2050
 F 0 "C14" H 2542 2096 50  0000 L CNN
@@ -220,7 +220,7 @@ $EndComp
 Wire Wire Line
 	6400 2450 6250 2450
 $Comp
-L Device:R_Small R3
+L Nuttali-rescue:R_Small-Device R3
 U 1 1 601C1642
 P 6500 2450
 F 0 "R3" V 6304 2450 50  0000 C CNN
@@ -238,7 +238,7 @@ Connection ~ 7050 2650
 Wire Wire Line
 	7350 2650 7050 2650
 $Comp
-L power:GND #PWR0120
+L Nuttali-rescue:GND-power #PWR0120
 U 1 1 601BFAD1
 P 7050 2750
 F 0 "#PWR0120" H 7050 2500 50  0001 C CNN
@@ -252,7 +252,7 @@ Wire Wire Line
 	6850 2450 6600 2450
 Connection ~ 6850 2450
 $Comp
-L Device:C_Small C20
+L Nuttali-rescue:C_Small-Device C20
 U 1 1 601BEECD
 P 6850 2550
 F 0 "C20" H 6942 2596 50  0000 L CNN
@@ -268,7 +268,7 @@ Wire Wire Line
 	7350 2450 7550 2450
 Connection ~ 7350 2450
 $Comp
-L Device:C_Small C21
+L Nuttali-rescue:C_Small-Device C21
 U 1 1 601BE3E8
 P 7350 2550
 F 0 "C21" H 7442 2596 50  0000 L CNN
@@ -286,7 +286,7 @@ Connection ~ 2750 3000
 Wire Wire Line
 	2500 3000 2750 3000
 $Comp
-L power:GND #PWR0119
+L Nuttali-rescue:GND-power #PWR0119
 U 1 1 601BCBD9
 P 2750 3100
 F 0 "#PWR0119" H 2750 2850 50  0001 C CNN
@@ -300,7 +300,7 @@ Wire Wire Line
 	3000 2800 3400 2800
 Connection ~ 3000 2800
 $Comp
-L Device:C_Small C18
+L Nuttali-rescue:C_Small-Device C18
 U 1 1 601BC32D
 P 3000 2900
 F 0 "C18" H 3092 2946 50  0000 L CNN
@@ -316,7 +316,7 @@ Wire Wire Line
 	2250 2800 2500 2800
 Connection ~ 2500 2800
 $Comp
-L Device:C_Small C15
+L Nuttali-rescue:C_Small-Device C15
 U 1 1 601BBB39
 P 2500 2900
 F 0 "C15" H 2592 2946 50  0000 L CNN
@@ -347,7 +347,7 @@ Connection ~ 2750 3700
 Wire Wire Line
 	2500 3700 2750 3700
 $Comp
-L power:GND #PWR0117
+L Nuttali-rescue:GND-power #PWR0117
 U 1 1 601B7EF0
 P 2750 3800
 F 0 "#PWR0117" H 2750 3550 50  0001 C CNN
@@ -360,7 +360,7 @@ $EndComp
 Wire Wire Line
 	3000 3500 3350 3500
 $Comp
-L Device:C_Small C19
+L Nuttali-rescue:C_Small-Device C19
 U 1 1 601B779D
 P 3000 3600
 F 0 "C19" H 3092 3646 50  0000 L CNN
@@ -376,7 +376,7 @@ Wire Wire Line
 	2250 3500 2500 3500
 Connection ~ 2500 3500
 $Comp
-L Device:C_Small C16
+L Nuttali-rescue:C_Small-Device C16
 U 1 1 601B7149
 P 2500 3600
 F 0 "C16" H 2592 3646 50  0000 L CNN
@@ -387,7 +387,7 @@ F 3 "~" H 2500 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0116
+L Nuttali-rescue:+3.3V-power #PWR0116
 U 1 1 601B6020
 P 2250 3500
 F 0 "#PWR0116" H 2250 3350 50  0001 C CNN

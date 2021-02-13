@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+3.3V #PWR0140
+L Nuttali-rescue:+3.3V-power #PWR0140
 U 1 1 6023138D
 P 1800 800
 F 0 "#PWR0140" H 1800 650 50  0001 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 1800 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L Nuttali-rescue:R-Device R7
 U 1 1 602321F1
 P 1800 1050
 F 0 "R7" H 1870 1096 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 1800 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C27
+L Nuttali-rescue:C-Device C27
 U 1 1 60232EB4
 P 1800 1600
 F 0 "C27" H 1915 1646 50  0000 L CNN
@@ -62,7 +62,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 1350 2350 1350
 $Comp
-L power:GND #PWR0141
+L Nuttali-rescue:GND-power #PWR0141
 U 1 1 602361A1
 P 1150 1450
 F 0 "#PWR0141" H 1150 1200 50  0001 C CNN
@@ -73,7 +73,7 @@ F 3 "" H 1150 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0142
+L Nuttali-rescue:GND-power #PWR0142
 U 1 1 602374C1
 P 1800 1850
 F 0 "#PWR0142" H 1800 1600 50  0001 C CNN
@@ -84,7 +84,7 @@ F 3 "" H 1800 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0143
+L Nuttali-rescue:+3.3V-power #PWR0143
 U 1 1 602440B2
 P 1800 2500
 F 0 "#PWR0143" H 1800 2350 50  0001 C CNN
@@ -95,7 +95,7 @@ F 3 "" H 1800 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L Nuttali-rescue:R-Device R8
 U 1 1 602440B8
 P 1800 2750
 F 0 "R8" H 1870 2796 50  0000 L CNN
@@ -106,7 +106,7 @@ F 3 "~" H 1800 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C28
+L Nuttali-rescue:C-Device C28
 U 1 1 602440BE
 P 1800 3300
 F 0 "C28" H 1915 3346 50  0000 L CNN
@@ -132,7 +132,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 3050 2350 3050
 $Comp
-L power:GND #PWR0144
+L Nuttali-rescue:GND-power #PWR0144
 U 1 1 602440CC
 P 1150 3150
 F 0 "#PWR0144" H 1150 2900 50  0001 C CNN
@@ -143,7 +143,7 @@ F 3 "" H 1150 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0145
+L Nuttali-rescue:GND-power #PWR0145
 U 1 1 602440D2
 P 1800 3550
 F 0 "#PWR0145" H 1800 3300 50  0001 C CNN
@@ -154,7 +154,7 @@ F 3 "" H 1800 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L Nuttali-rescue:R-Device R9
 U 1 1 602454FA
 P 2000 5150
 F 0 "R9" H 2070 5196 50  0000 L CNN
@@ -169,7 +169,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 5150 2250 5150
 $Comp
-L power:+3.3V #PWR0147
+L Nuttali-rescue:+3.3V-power #PWR0147
 U 1 1 6027821D
 P 1250 6550
 F 0 "#PWR0147" H 1250 6400 50  0001 C CNN
@@ -180,7 +180,7 @@ F 3 "" H 1250 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L Nuttali-rescue:R-Device R10
 U 1 1 60278223
 P 1950 5600
 F 0 "R10" H 2020 5646 50  0000 L CNN
@@ -197,7 +197,7 @@ SideFront
 Text GLabel 2050 6450 0    50   Output ~ 0
 SideBack
 $Comp
-L power:+3.3V #PWR0148
+L Nuttali-rescue:+3.3V-power #PWR0148
 U 1 1 602BC22A
 P 4400 2450
 F 0 "#PWR0148" H 4400 2300 50  0001 C CNN
@@ -208,7 +208,7 @@ F 3 "" H 4400 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R13
+L Nuttali-rescue:R-Device R13
 U 1 1 602BC230
 P 5100 2450
 F 0 "R13" H 5170 2496 50  0000 L CNN
@@ -227,7 +227,7 @@ Wire Wire Line
 Text GLabel 5350 2450 2    50   Output ~ 0
 WheelButton
 $Comp
-L power:+3.3V #PWR0150
+L Nuttali-rescue:+3.3V-power #PWR0150
 U 1 1 602BED6F
 P 9150 3800
 F 0 "#PWR0150" H 9150 3650 50  0001 C CNN
@@ -238,7 +238,7 @@ F 3 "" H 9150 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R15
+L Nuttali-rescue:R-Device R15
 U 1 1 602BED75
 P 9850 3800
 F 0 "R15" H 9920 3846 50  0000 L CNN
@@ -257,7 +257,7 @@ Wire Wire Line
 Text GLabel 10100 3800 2    50   Output ~ 0
 Turbo
 $Comp
-L Device:LED D4
+L Nuttali-rescue:LED-Device D4
 U 1 1 602CBCDE
 P 9750 3350
 F 0 "D4" H 9743 3095 50  0000 C CNN
@@ -268,7 +268,7 @@ F 3 "~" H 9750 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0152
+L Nuttali-rescue:GND-power #PWR0152
 U 1 1 602CF144
 P 10250 3400
 F 0 "#PWR0152" H 10250 3150 50  0001 C CNN
@@ -301,7 +301,7 @@ Scroll wheel
 Text Notes 7550 950  0    50   ~ 0
 Top buttons
 $Comp
-L Device:Rotary_Encoder SW8
+L Nuttali-rescue:Rotary_Encoder-Device SW8
 U 1 1 60310A0D
 P 5200 3650
 F 0 "SW8" H 5430 3696 50  0000 L CNN
@@ -312,7 +312,7 @@ F 3 "~" H 5200 3910 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C29
+L Nuttali-rescue:C-Device C29
 U 1 1 60318A18
 P 4200 3450
 F 0 "C29" H 4315 3496 50  0000 L CNN
@@ -323,7 +323,7 @@ F 3 "~" H 4200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C30
+L Nuttali-rescue:C-Device C30
 U 1 1 6031913E
 P 4200 3850
 F 0 "C30" H 4315 3896 50  0000 L CNN
@@ -334,7 +334,7 @@ F 3 "~" H 4200 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
+L Nuttali-rescue:R-Device R11
 U 1 1 6031998E
 P 4650 3200
 F 0 "R11" H 4720 3246 50  0000 L CNN
@@ -345,7 +345,7 @@ F 3 "~" H 4650 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R12
+L Nuttali-rescue:R-Device R12
 U 1 1 6031A38F
 P 4650 4200
 F 0 "R12" H 4720 4246 50  0000 L CNN
@@ -390,7 +390,7 @@ Connection ~ 4650 3650
 Wire Wire Line
 	4650 3650 4900 3650
 $Comp
-L power:GND #PWR0153
+L Nuttali-rescue:GND-power #PWR0153
 U 1 1 6032A748
 P 4650 3700
 F 0 "#PWR0153" H 4650 3450 50  0001 C CNN
@@ -405,7 +405,7 @@ WheelA
 Text GLabel 3950 4200 0    50   Input ~ 0
 WheelB
 $Comp
-L Switch:SW_Push SW3
+L Nuttali-rescue:SW_Push-Switch SW3
 U 1 1 6026C8AE
 P 1350 1350
 F 0 "SW3" H 1350 1635 50  0000 C CNN
@@ -416,7 +416,7 @@ F 3 "~" H 1350 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW4
+L Nuttali-rescue:SW_Push-Switch SW4
 U 1 1 6026D38D
 P 1350 3050
 F 0 "SW4" H 1350 3335 50  0000 C CNN
@@ -427,7 +427,7 @@ F 3 "~" H 1350 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW5
+L Nuttali-rescue:SW_Push-Switch SW5
 U 1 1 6026DDAA
 P 1600 5150
 F 0 "SW5" H 1600 5435 50  0000 C CNN
@@ -438,7 +438,7 @@ F 3 "~" H 1600 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW6
+L Nuttali-rescue:SW_Push-Switch SW6
 U 1 1 6026F191
 P 1550 5600
 F 0 "SW6" H 1550 5885 50  0000 C CNN
@@ -449,7 +449,7 @@ F 3 "~" H 1550 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW7
+L Nuttali-rescue:SW_Push-Switch SW7
 U 1 1 6026F8D9
 P 4700 2450
 F 0 "SW7" H 4700 2735 50  0000 C CNN
@@ -460,7 +460,7 @@ F 3 "~" H 4700 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW10
+L Nuttali-rescue:SW_Push-Switch SW10
 U 1 1 602726D9
 P 9450 3800
 F 0 "SW10" H 9450 4085 50  0000 C CNN
@@ -475,9 +475,11 @@ Wire Wire Line
 Wire Notes Line
 	3100 550  3100 7700
 $Comp
-L Connector:Conn_01x03_Male J4
+L Nuttali-rescue:Conn_01x03_Male-Connector J4
 U 1 1 6025B611
 P 2750 5300
+AR Path="/6025B611" Ref="J4"  Part="1" 
+AR Path="/6022DC9B/6025B611" Ref="J4"  Part="1" 
 F 0 "J4" H 2858 5581 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 2858 5490 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2750 5300 50  0001 C CNN
@@ -507,9 +509,11 @@ Wire Wire Line
 Wire Wire Line
 	950  5150 1400 5150
 $Comp
-L Connector:Conn_01x03_Male J3
+L Nuttali-rescue:Conn_01x03_Male-Connector J3
 U 1 1 6029AD59
 P 2250 6450
+AR Path="/6029AD59" Ref="J3"  Part="1" 
+AR Path="/6022DC9B/6029AD59" Ref="J3"  Part="1" 
 F 0 "J3" H 2358 6731 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 2358 6640 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2250 6450 50  0001 C CNN
