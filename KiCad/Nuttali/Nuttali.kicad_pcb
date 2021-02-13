@@ -3264,7 +3264,7 @@
   )
 
   (module Nuttali:D2F-5 (layer F.Cu) (tedit 6027D4B4) (tstamp 60286841)
-    (at 75.25 91.6 90)
+    (at 75.5 91.25 90)
     (path /6022DC9B/602CB46F)
     (fp_text reference U9 (at 0 -7.5 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
