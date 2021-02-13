@@ -15,7 +15,8 @@ Insted of USB-C
 [Mouse Encoder](https://se.rs-online.com/web/p/mechanical-rotary-encoders/7295545) 9.62 SEK  
 [Mouse wheel](https://www.aliexpress.com/item/4001130734583.html?spm=a2g0o.productlist.0.0.c3d54185olZU1Z&algo_pvid=3286bd96-9665-4c1a-8086-8c6a5f0af00b&algo_expid=3286bd96-9665-4c1a-8086-8c6a5f0af00b-7&btsid=0b0a050116122963007627682e0cfa&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)  
 
-[Mouse Buttons](https://www.elfa.se/en/tactile-switch-1no-on-off-53n-5x6mm-wuerth-elektronik-434121050836/p/30142305?q=&pos=133&origPos=133&origPageSize=10&track=true) 6.84 SEK
+[Mouse Buttons](https://www.elfa.se/en/micro-switch-d2f-5a-1co-47n-pin-plunger-omron-electronic-components-d2f/p/30156583?track=true&no-cache=true&marketingPopup=false) 13.90 SEK  
+[Scroll Button](https://www.elfa.se/sv/taktil-omkopplare-1no-pa-av-57n-2x6-2mm-wuerth-elektronik-430182080816/p/30142277?q=switch&pos=22&origPos=5440&origPageSize=50&track=true) 5.16 SEK
 
-
-
+[To 3.3V](https://www.elfa.se/en/ldo-voltage-regulator-3v-360ma-sot-23-diodes-incorporated-ap2125n-3trg1/p/30041163) 0.2632 SEK  
+[To 1.9V](https://www.elfa.se/en/ldo-voltage-regulator-24-20v-sot-23-microchip-mic5235ym5-tr/p/30099685) 12.80 SEK 

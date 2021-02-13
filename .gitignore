@@ -30,9 +30,9 @@ fp-info-cache
 *.xml
 *.csv
 
-*.kicad_pcb
-*.pro
-*.sch
+#*.kicad_pcb
+#*.pro
+#*.sch
 
 # /\ /\ /\ /\ /\
 # || || || || ||

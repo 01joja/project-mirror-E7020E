@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name Nuttali)(type KiCad)(uri "/home/tommy/Documents/Inbygda system/nuttali-e7020e/KiCad/Nuttali")(options "")(descr ""))
+  (lib (name Nuttali)(type KiCad)(uri "C:/Users/01joja/Documents/LTU/år 4/inbyggda_system/Nuttali/KiCad/Nuttali/PMW.pretty")(options "")(descr ""))
 )

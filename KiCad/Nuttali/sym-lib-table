@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Nuttali-rescue)(type Legacy)(uri ${KIPRJMOD}/Nuttali-rescue.lib)(options "")(descr ""))
+  (lib (name new_components)(type Legacy)(uri ${KIPRJMOD}/new_components.lib)(options "")(descr ""))
 )

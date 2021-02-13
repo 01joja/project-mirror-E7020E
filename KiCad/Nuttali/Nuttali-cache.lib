@@ -500,23 +500,6 @@ X B 4 200 0 100 L 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# Nuttali-rescue_SW_Push-Switch
-#
-DEF Nuttali-rescue_SW_Push-Switch SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Nuttali-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
-DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
 # Nuttali-rescue_SW_SPDT-Switch
 #
 DEF Nuttali-rescue_SW_SPDT-Switch SW 0 0 Y N 1 F N
@@ -599,6 +582,38 @@ X I/O2 3 400 -100 100 L 50 50 1 1 P
 X I/O2 4 400 100 100 L 50 50 1 1 P
 X VBUS 5 0 400 100 D 50 50 1 1 P
 X I/O1 6 -400 100 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# new_components_Button
+#
+DEF new_components_Button U 0 40 Y Y 1 F N
+F0 "U" 100 250 50 H V C CNN
+F1 "new_components_Button" 100 250 50 H V C CNN
+F2 "" 100 250 50 H I C CNN
+F3 "" 100 250 50 H I C CNN
+DRAW
+A -75 150 25 1 1799 0 1 0 N -50 150 -100 150
+S -200 150 300 -150 0 1 0 f
+X Com 1 -100 -250 100 U 50 50 1 1 P
+X NO 2 50 -250 100 U 50 50 1 1 P
+X NC 3 200 -250 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# new_components_Scroll_button
+#
+DEF new_components_Scroll_button U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "new_components_Scroll_button" 0 250 50 H V C CNN
+F2 "" 0 250 50 H I C CNN
+F3 "" 0 250 50 H I C CNN
+DRAW
+S -150 150 150 -150 0 1 0 f
+X 1 1 -250 100 100 R 50 50 1 1 P
+X 2 2 -250 -100 100 R 50 50 1 1 P
+X 3 3 250 -100 100 L 50 50 1 1 P
+X 4 4 250 100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
