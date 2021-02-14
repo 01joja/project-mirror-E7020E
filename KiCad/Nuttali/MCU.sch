@@ -323,12 +323,12 @@ Wire Wire Line
 $Comp
 L Nuttali-rescue:Conn_01x06_Male-Connector J1
 U 1 1 602DCAE5
-P 8400 5950
-F 0 "J1" H 8372 5832 50  0000 R CNN
-F 1 "SWD" H 8372 5923 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 8400 5950 50  0001 C CNN
-F 3 "~" H 8400 5950 50  0001 C CNN
-	1    8400 5950
+P 8450 4800
+F 0 "J1" H 8422 4682 50  0000 R CNN
+F 1 "SWD" H 8422 4773 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 8450 4800 50  0001 C CNN
+F 3 "~" H 8450 4800 50  0001 C CNN
+	1    8450 4800
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -587,43 +587,43 @@ Wire Wire Line
 Wire Wire Line
 	6200 3750 6150 3750
 Wire Wire Line
-	8200 5650 7950 5650
+	8250 4500 8000 4500
 Wire Wire Line
-	7950 5650 7950 5600
+	8000 4500 8000 4450
 $Comp
 L Nuttali-rescue:+3.3V-power #PWR0114
 U 1 1 601F634D
-P 7950 5600
-F 0 "#PWR0114" H 7950 5450 50  0001 C CNN
-F 1 "+3.3V" H 7965 5773 50  0000 C CNN
-F 2 "" H 7950 5600 50  0001 C CNN
-F 3 "" H 7950 5600 50  0001 C CNN
-	1    7950 5600
+P 8000 4450
+F 0 "#PWR0114" H 8000 4300 50  0001 C CNN
+F 1 "+3.3V" H 8015 4623 50  0000 C CNN
+F 2 "" H 8000 4450 50  0001 C CNN
+F 3 "" H 8000 4450 50  0001 C CNN
+	1    8000 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Nuttali-rescue:GND-power #PWR0115
 U 1 1 601F695B
-P 7450 5900
-F 0 "#PWR0115" H 7450 5650 50  0001 C CNN
-F 1 "GND" H 7455 5727 50  0000 C CNN
-F 2 "" H 7450 5900 50  0001 C CNN
-F 3 "" H 7450 5900 50  0001 C CNN
-	1    7450 5900
+P 7500 4750
+F 0 "#PWR0115" H 7500 4500 50  0001 C CNN
+F 1 "GND" H 7505 4577 50  0000 C CNN
+F 2 "" H 7500 4750 50  0001 C CNN
+F 3 "" H 7500 4750 50  0001 C CNN
+	1    7500 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7450 5850 8200 5850
+	7500 4700 8250 4700
 Wire Wire Line
-	7450 5900 7450 5850
+	7500 4750 7500 4700
 Wire Wire Line
-	8150 6150 8200 6150
+	8200 5000 8250 5000
 Wire Wire Line
-	8200 6050 8150 6050
+	8250 4900 8200 4900
 Wire Wire Line
-	8150 5750 8200 5750
+	8200 4600 8250 4600
 Wire Wire Line
-	8150 5950 8200 5950
+	8200 4800 8250 4800
 NoConn ~ 6150 4150
 NoConn ~ 6150 4450
 NoConn ~ 6150 4550
@@ -697,218 +697,13 @@ Text GLabel 2750 5450 3    50   Input ~ 0
 D-
 Text GLabel 3250 5450 3    50   Input ~ 0
 D+
-Wire Wire Line
-	9500 2600 9500 2800
-Connection ~ 9500 2600
-Wire Wire Line
-	9500 2400 9500 2600
-Wire Wire Line
-	9200 2400 9500 2400
-Connection ~ 9500 2800
-Wire Wire Line
-	9200 2600 9500 2600
-Wire Wire Line
-	9500 3250 9500 3450
-Connection ~ 9500 3250
-Wire Wire Line
-	9500 2800 9500 3250
-Wire Wire Line
-	9200 2800 9500 2800
-Wire Wire Line
-	9500 3450 9500 3650
-Connection ~ 9500 3450
-Wire Wire Line
-	9200 3250 9500 3250
-Connection ~ 9500 3650
-Wire Wire Line
-	9200 3450 9500 3450
-Wire Wire Line
-	9500 4100 9500 4300
-Connection ~ 9500 4100
-Wire Wire Line
-	9500 3650 9500 4100
-Wire Wire Line
-	9200 3650 9500 3650
-Wire Wire Line
-	8750 2400 9000 2400
-Wire Wire Line
-	8750 2600 9000 2600
-Wire Wire Line
-	8750 2800 9000 2800
-Wire Wire Line
-	8750 3250 9000 3250
-Wire Wire Line
-	9000 3450 8750 3450
-Wire Wire Line
-	8750 3650 9000 3650
-Wire Wire Line
-	8750 4100 9000 4100
-Connection ~ 9500 4300
-Wire Wire Line
-	9200 4100 9500 4100
-Connection ~ 9500 4500
-Wire Wire Line
-	9500 4300 9500 4500
-Wire Wire Line
-	9200 4300 9500 4300
-Wire Wire Line
-	8750 4300 9000 4300
-Wire Wire Line
-	9200 4500 9500 4500
-Wire Wire Line
-	8750 4500 9000 4500
-$Comp
-L Nuttali-rescue:GND-power #PWR?
-U 1 1 6032E117
-P 9500 4500
-AR Path="/6032E117" Ref="#PWR?"  Part="1" 
-AR Path="/6022F0F9/6032E117" Ref="#PWR0154"  Part="1" 
-F 0 "#PWR0154" H 9500 4250 50  0001 C CNN
-F 1 "GND" H 9505 4327 50  0000 C CNN
-F 2 "" H 9500 4500 50  0001 C CNN
-F 3 "" H 9500 4500 50  0001 C CNN
-	1    9500 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R24
-U 1 1 6032C1C8
-P 9100 4500
-F 0 "R24" V 8904 4500 50  0000 C CNN
-F 1 "220" V 8995 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 4500 50  0001 C CNN
-F 3 "~" H 9100 4500 50  0001 C CNN
-	1    9100 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R23
-U 1 1 6032C1C2
-P 9100 4300
-F 0 "R23" V 8904 4300 50  0000 C CNN
-F 1 "220" V 8995 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 4300 50  0001 C CNN
-F 3 "~" H 9100 4300 50  0001 C CNN
-	1    9100 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R22
-U 1 1 6032C1BC
-P 9100 4100
-F 0 "R22" V 8904 4100 50  0000 C CNN
-F 1 "220" V 8995 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 4100 50  0001 C CNN
-F 3 "~" H 9100 4100 50  0001 C CNN
-	1    9100 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R21
-U 1 1 60329EB6
-P 9100 3650
-F 0 "R21" V 8904 3650 50  0000 C CNN
-F 1 "220" V 8995 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 3650 50  0001 C CNN
-F 3 "~" H 9100 3650 50  0001 C CNN
-	1    9100 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R20
-U 1 1 60329EB0
-P 9100 3450
-F 0 "R20" V 8904 3450 50  0000 C CNN
-F 1 "220" V 8995 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 3450 50  0001 C CNN
-F 3 "~" H 9100 3450 50  0001 C CNN
-	1    9100 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R19
-U 1 1 60329EAA
-P 9100 3250
-F 0 "R19" V 8904 3250 50  0000 C CNN
-F 1 "220" V 8995 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 3250 50  0001 C CNN
-F 3 "~" H 9100 3250 50  0001 C CNN
-	1    9100 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R18
-U 1 1 60327306
-P 9100 2800
-F 0 "R18" V 8904 2800 50  0000 C CNN
-F 1 "220" V 8995 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 2800 50  0001 C CNN
-F 3 "~" H 9100 2800 50  0001 C CNN
-	1    9100 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R17
-U 1 1 60326D05
-P 9100 2600
-F 0 "R17" V 8904 2600 50  0000 C CNN
-F 1 "220" V 8995 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 2600 50  0001 C CNN
-F 3 "~" H 9100 2600 50  0001 C CNN
-	1    9100 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:R_Small-Device R16
-U 1 1 6032557E
-P 9100 2400
-F 0 "R16" V 8904 2400 50  0000 C CNN
-F 1 "220" V 8995 2400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 2400 50  0001 C CNN
-F 3 "~" H 9100 2400 50  0001 C CNN
-	1    9100 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:LED_RGB-Device D5
-U 1 1 60285E04
-P 8550 2600
-F 0 "D5" H 8550 2133 50  0000 C CNN
-F 1 "LED_RGB" H 8550 2224 50  0000 C CNN
-F 2 "LED_SMD:LED_RGB_5050-6" H 8550 2550 50  0001 C CNN
-F 3 "~" H 8550 2550 50  0001 C CNN
-	1    8550 2600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Nuttali-rescue:LED_RGB-Device D6
-U 1 1 602851F0
-P 8550 3450
-F 0 "D6" H 8550 2983 50  0000 C CNN
-F 1 "LED_RGB" H 8550 3074 50  0000 C CNN
-F 2 "LED_SMD:LED_RGB_5050-6" H 8550 3400 50  0001 C CNN
-F 3 "~" H 8550 3400 50  0001 C CNN
-	1    8550 3450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Nuttali-rescue:LED_RGB-Device D7
-U 1 1 6028314D
-P 8550 4300
-F 0 "D7" H 8550 3833 50  0000 C CNN
-F 1 "LED_RGB" H 8550 3924 50  0000 C CNN
-F 2 "LED_SMD:LED_RGB_5050-6" H 8550 4250 50  0001 C CNN
-F 3 "~" H 8550 4250 50  0001 C CNN
-	1    8550 4300
-	-1   0    0    1   
-$EndComp
-Text GLabel 8150 5750 0    50   Output ~ 0
+Text GLabel 8200 4600 0    50   Output ~ 0
 SWCLK
-Text GLabel 8150 5950 0    50   BiDi ~ 0
+Text GLabel 8200 4800 0    50   BiDi ~ 0
 SWDIO
-Text GLabel 8150 6050 0    50   Output ~ 0
+Text GLabel 8200 4900 0    50   Output ~ 0
 NRST
-Text GLabel 8150 6150 0    50   Input ~ 0
+Text GLabel 8200 5000 0    50   Input ~ 0
 SWO
 Text GLabel 6200 3950 2    50   BiDi ~ 0
 SWDIO
@@ -927,24 +722,6 @@ BOOT0
 Text GLabel 6150 2950 2    50   Input ~ 0
 R_LED
 Text GLabel 6150 2850 2    50   Input ~ 0
-G_LED
-Text GLabel 8350 2800 0    50   Output ~ 0
-R_LED
-Text GLabel 8350 3650 0    50   Output ~ 0
-R_LED
-Text GLabel 8350 4500 0    50   Output ~ 0
-R_LED
-Text GLabel 8350 2400 0    50   Output ~ 0
-B_LED
-Text GLabel 8350 3250 0    50   Output ~ 0
-B_LED
-Text GLabel 8350 4100 0    50   Output ~ 0
-B_LED
-Text GLabel 8350 2600 0    50   Output ~ 0
-G_LED
-Text GLabel 8350 3450 0    50   Output ~ 0
-G_LED
-Text GLabel 8350 4300 0    50   Output ~ 0
 G_LED
 NoConn ~ 4750 4050
 Text GLabel 6150 4350 2    50   Input ~ 0
@@ -972,4 +749,83 @@ Text GLabel 6150 3150 2    50   Output ~ 0
 RightB
 Text GLabel 6150 3350 2    50   Input ~ 0
 WheelA
+Text GLabel 7600 3000 0    50   Output ~ 0
+G_LED
+Text GLabel 7600 3200 0    50   Output ~ 0
+B_LED
+Text GLabel 7600 2800 0    50   Output ~ 0
+R_LED
+$Comp
+L Nuttali-rescue:R_Small-Device R16
+U 1 1 6032557E
+P 7700 2800
+F 0 "R16" V 7600 2800 50  0000 C CNN
+F 1 "220" V 7600 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7700 2800 50  0001 C CNN
+F 3 "~" H 7700 2800 50  0001 C CNN
+	1    7700 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Nuttali-rescue:R_Small-Device R17
+U 1 1 60326D05
+P 7700 3000
+F 0 "R17" V 7600 3000 50  0000 C CNN
+F 1 "220" V 7600 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7700 3000 50  0001 C CNN
+F 3 "~" H 7700 3000 50  0001 C CNN
+	1    7700 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Nuttali-rescue:R_Small-Device R18
+U 1 1 60327306
+P 7700 3200
+F 0 "R18" V 7600 3200 50  0000 C CNN
+F 1 "220" V 7600 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7700 3200 50  0001 C CNN
+F 3 "~" H 7700 3200 50  0001 C CNN
+	1    7700 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Nuttali-rescue:GND-power #PWR?
+U 1 1 6032E117
+P 8100 3300
+AR Path="/6032E117" Ref="#PWR?"  Part="1" 
+AR Path="/6022F0F9/6032E117" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 8100 3050 50  0001 C CNN
+F 1 "GND" H 8105 3127 50  0000 C CNN
+F 2 "" H 8100 3300 50  0001 C CNN
+F 3 "" H 8100 3300 50  0001 C CNN
+	1    8100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 6030C505
+P 8350 3200
+F 0 "J5" H 8322 3082 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 8322 3173 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8350 3200 50  0001 C CNN
+F 3 "~" H 8350 3200 50  0001 C CNN
+	1    8350 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 3200 8150 3200
+Wire Wire Line
+	8150 3100 7950 3100
+Wire Wire Line
+	8000 3000 8150 3000
+Wire Wire Line
+	8100 3300 8150 3300
+Wire Wire Line
+	8000 2800 8000 3000
+Wire Wire Line
+	7800 2800 8000 2800
+Wire Wire Line
+	7800 3000 7950 3000
+Wire Wire Line
+	7950 3000 7950 3100
 $EndSCHEMATC

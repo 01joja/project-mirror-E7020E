@@ -102,9 +102,7 @@ Wire Wire Line
 	4400 2550 4650 2550
 Wire Wire Line
 	5000 2550 4950 2550
-Wire Wire Line
-	3900 2750 3800 2750
-Text GLabel 3800 2750 0    50   Output ~ 0
+Text GLabel 3650 2750 0    50   Output ~ 0
 WheelButton
 $Comp
 L Nuttali-rescue:R-Device R15
@@ -116,17 +114,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8980 3400 50  0
 F 3 "~" H 9050 3400 50  0001 C CNN
 	1    9050 3400
 	0    1    1    0   
-$EndComp
-$Comp
-L Nuttali-rescue:LED-Device D4
-U 1 1 602CBCDE
-P 9600 2650
-F 0 "D4" H 9593 2395 50  0000 C CNN
-F 1 "LED" H 9593 2486 50  0000 C CNN
-F 2 "Nuttali:LED" H 9600 2650 50  0001 C CNN
-F 3 "~" H 9600 2650 50  0001 C CNN
-	1    9600 2650
-	-1   0    0    1   
 $EndComp
 $Comp
 L Nuttali-rescue:GND-power #PWR0152
@@ -141,10 +128,6 @@ F 3 "" H 10100 2700 50  0001 C CNN
 $EndComp
 Text GLabel 9300 2650 0    50   Input ~ 0
 Turbo_LED
-Wire Wire Line
-	9300 2650 9450 2650
-Wire Wire Line
-	9750 2650 10100 2650
 Wire Wire Line
 	10100 2700 10100 2650
 Wire Notes Line
@@ -315,7 +298,7 @@ Wire Wire Line
 	1400 2950 1150 2950
 Connection ~ 1150 2950
 Wire Wire Line
-	1150 2950 850  2950
+	1150 2950 900  2950
 $Comp
 L Nuttali-rescue:R-Device R7
 U 1 1 602321F1
@@ -391,7 +374,7 @@ F 3 "" H 1650 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  1350 1200 1350
+	900  1350 950  1350
 Connection ~ 1200 1350
 Wire Wire Line
 	1200 1350 1450 1350
@@ -425,10 +408,10 @@ NoConn ~ 9500 3400
 Wire Notes Line
 	7000 6500 7000 500 
 Wire Wire Line
-	9350 3400 9350 3850
+	9350 3400 9350 3700
 Connection ~ 4900 3200
 Wire Wire Line
-	4200 3200 4900 3200
+	4200 3200 4350 3200
 $Comp
 L Nuttali-rescue:+3.3V-power #PWR0146
 U 1 1 604D0219
@@ -444,7 +427,7 @@ Wire Wire Line
 	5250 3200 5200 3200
 Connection ~ 4900 4200
 Wire Wire Line
-	4200 4200 4900 4200
+	4200 4200 4750 4200
 $Comp
 L Nuttali-rescue:+3.3V-power #PWR0149
 U 1 1 604D56F4
@@ -458,4 +441,129 @@ F 3 "" H 5250 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 4200 5200 4200
+$Comp
+L Nuttali-rescue:TestPoint-Connector TP?
+U 1 1 602996E2
+P 950 1150
+AR Path="/601B1425/602996E2" Ref="TP?"  Part="1" 
+AR Path="/6022DC9B/602996E2" Ref="TP11"  Part="1" 
+F 0 "TP11" H 1008 1268 50  0000 L CNN
+F 1 "TestPoint" H 1008 1177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1150 1150 50  0001 C CNN
+F 3 "~" H 1150 1150 50  0001 C CNN
+	1    950  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nuttali-rescue:TestPoint-Connector TP?
+U 1 1 6029A34F
+P 900 2750
+AR Path="/601B1425/6029A34F" Ref="TP?"  Part="1" 
+AR Path="/6022DC9B/6029A34F" Ref="TP10"  Part="1" 
+F 0 "TP10" H 958 2868 50  0000 L CNN
+F 1 "TestPoint" H 958 2777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1100 2750 50  0001 C CNN
+F 3 "~" H 1100 2750 50  0001 C CNN
+	1    900  2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nuttali-rescue:TestPoint-Connector TP?
+U 1 1 6029B953
+P 3750 2250
+AR Path="/601B1425/6029B953" Ref="TP?"  Part="1" 
+AR Path="/6022DC9B/6029B953" Ref="TP12"  Part="1" 
+F 0 "TP12" H 3808 2368 50  0000 L CNN
+F 1 "TestPoint" H 3808 2277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3950 2250 50  0001 C CNN
+F 3 "~" H 3950 2250 50  0001 C CNN
+	1    3750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nuttali-rescue:TestPoint-Connector TP?
+U 1 1 6029C224
+P 4350 3100
+AR Path="/601B1425/6029C224" Ref="TP?"  Part="1" 
+AR Path="/6022DC9B/6029C224" Ref="TP13"  Part="1" 
+F 0 "TP13" H 4408 3218 50  0000 L CNN
+F 1 "TestPoint" H 4408 3127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4550 3100 50  0001 C CNN
+F 3 "~" H 4550 3100 50  0001 C CNN
+	1    4350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nuttali-rescue:TestPoint-Connector TP?
+U 1 1 6029CEB2
+P 4750 4300
+AR Path="/601B1425/6029CEB2" Ref="TP?"  Part="1" 
+AR Path="/6022DC9B/6029CEB2" Ref="TP14"  Part="1" 
+F 0 "TP14" H 4808 4418 50  0000 L CNN
+F 1 "TestPoint" H 4808 4327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4950 4300 50  0001 C CNN
+F 3 "~" H 4950 4300 50  0001 C CNN
+	1    4750 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Nuttali-rescue:TestPoint-Connector TP?
+U 1 1 6029F887
+P 9500 3700
+AR Path="/601B1425/6029F887" Ref="TP?"  Part="1" 
+AR Path="/6022DC9B/6029F887" Ref="TP15"  Part="1" 
+F 0 "TP15" H 9558 3818 50  0000 L CNN
+F 1 "TestPoint" H 9558 3727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9700 3700 50  0001 C CNN
+F 3 "~" H 9700 3700 50  0001 C CNN
+	1    9500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3700 9350 3700
+Connection ~ 9350 3700
+Wire Wire Line
+	9350 3700 9350 3850
+Wire Wire Line
+	900  2950 900  2750
+Connection ~ 900  2950
+Wire Wire Line
+	900  2950 850  2950
+Wire Wire Line
+	950  1350 950  1150
+Connection ~ 950  1350
+Wire Wire Line
+	950  1350 1200 1350
+Wire Wire Line
+	3650 2750 3750 2750
+Wire Wire Line
+	3750 2250 3750 2750
+Connection ~ 3750 2750
+Wire Wire Line
+	3750 2750 3900 2750
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 602CAADB
+P 9650 2450
+F 0 "J4" V 9712 2494 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 9803 2494 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9650 2450 50  0001 C CNN
+F 3 "~" H 9650 2450 50  0001 C CNN
+	1    9650 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 2650 10100 2650
+Wire Wire Line
+	9300 2650 9550 2650
+Wire Wire Line
+	4350 3100 4350 3200
+Connection ~ 4350 3200
+Wire Wire Line
+	4350 3200 4900 3200
+Wire Wire Line
+	4750 4300 4750 4200
+Connection ~ 4750 4200
+Wire Wire Line
+	4750 4200 4900 4200
 $EndSCHEMATC
