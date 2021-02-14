@@ -99,8 +99,6 @@ F 3 "~" H 4800 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4400 2550 4650 2550
-Wire Wire Line
 	5000 2550 4950 2550
 Text GLabel 3650 2750 0    50   Output ~ 0
 WheelButton
@@ -264,7 +262,6 @@ F 3 "" H 4150 2900 50  0001 C CNN
 	1    4150 2650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4400 2750
 NoConn ~ 3900 2550
 $Comp
 L Nuttali-rescue:GND-power #PWR0144
@@ -566,4 +563,9 @@ Wire Wire Line
 Connection ~ 4750 4200
 Wire Wire Line
 	4750 4200 4900 4200
+Wire Wire Line
+	4650 2750 4400 2750
+Wire Wire Line
+	4650 2750 4650 2550
+NoConn ~ 4400 2550
 $EndSCHEMATC
