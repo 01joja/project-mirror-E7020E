@@ -262,6 +262,7 @@ F 3 "" H 4150 2900 50  0001 C CNN
 	1    4150 2650
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4400 2550
 NoConn ~ 3900 2550
 $Comp
 L Nuttali-rescue:GND-power #PWR0144
@@ -403,7 +404,7 @@ Text GLabel 9350 3850 3    50   Output ~ 0
 Turbo
 NoConn ~ 9500 3400
 Wire Notes Line
-	7000 6500 7000 500 
+	7050 6650 7050 650 
 Wire Wire Line
 	9350 3400 9350 3700
 Connection ~ 4900 3200
@@ -564,8 +565,9 @@ Connection ~ 4750 4200
 Wire Wire Line
 	4750 4200 4900 4200
 Wire Wire Line
-	4650 2750 4400 2750
+	4400 2750 4550 2750
 Wire Wire Line
-	4650 2750 4650 2550
-NoConn ~ 4400 2550
+	4550 2750 4550 2550
+Wire Wire Line
+	4550 2550 4650 2550
 $EndSCHEMATC
