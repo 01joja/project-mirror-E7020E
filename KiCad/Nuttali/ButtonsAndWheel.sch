@@ -79,32 +79,32 @@ SideBack
 $Comp
 L Nuttali-rescue:+3.3V-power #PWR0148
 U 1 1 602BC22A
-P 3650 2750
-F 0 "#PWR0148" H 3650 2600 50  0001 C CNN
-F 1 "+3.3V" H 3665 2923 50  0000 C CNN
-F 2 "" H 3650 2750 50  0001 C CNN
-F 3 "" H 3650 2750 50  0001 C CNN
-	1    3650 2750
+P 5000 2550
+F 0 "#PWR0148" H 5000 2400 50  0001 C CNN
+F 1 "+3.3V" H 5015 2723 50  0000 C CNN
+F 2 "" H 5000 2550 50  0001 C CNN
+F 3 "" H 5000 2550 50  0001 C CNN
+	1    5000 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Nuttali-rescue:R-Device R13
 U 1 1 602BC230
-P 4600 2550
-F 0 "R13" H 4670 2596 50  0000 L CNN
-F 1 "10k" H 4670 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4530 2550 50  0001 C CNN
-F 3 "~" H 4600 2550 50  0001 C CNN
-	1    4600 2550
-	0    -1   -1   0   
+P 4800 2550
+F 0 "R13" H 4870 2596 50  0000 L CNN
+F 1 "10k" H 4870 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4730 2550 50  0001 C CNN
+F 3 "~" H 4800 2550 50  0001 C CNN
+	1    4800 2550
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3650 2750 3900 2750
+	4400 2550 4650 2550
 Wire Wire Line
-	4400 2550 4450 2550
+	5000 2550 4950 2550
 Wire Wire Line
-	4750 2550 4850 2550
-Text GLabel 4850 2550 2    50   Output ~ 0
+	3900 2750 3800 2750
+Text GLabel 3800 2750 0    50   Output ~ 0
 WheelButton
 $Comp
 L Nuttali-rescue:R-Device R15
@@ -193,31 +193,27 @@ $EndComp
 $Comp
 L Nuttali-rescue:R-Device R11
 U 1 1 6031998E
-P 4650 3200
-F 0 "R11" H 4720 3246 50  0000 L CNN
-F 1 "10k" H 4720 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4580 3200 50  0001 C CNN
-F 3 "~" H 4650 3200 50  0001 C CNN
-	1    4650 3200
-	0    -1   -1   0   
+P 5050 3200
+F 0 "R11" H 5120 3246 50  0000 L CNN
+F 1 "10k" H 5120 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4980 3200 50  0001 C CNN
+F 3 "~" H 5050 3200 50  0001 C CNN
+	1    5050 3200
+	0    1    1    0   
 $EndComp
 $Comp
 L Nuttali-rescue:R-Device R12
 U 1 1 6031A38F
-P 4650 4200
-F 0 "R12" H 4720 4246 50  0000 L CNN
-F 1 "10k" H 4720 4155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4580 4200 50  0001 C CNN
-F 3 "~" H 4650 4200 50  0001 C CNN
-	1    4650 4200
+P 5050 4200
+F 0 "R12" H 5120 4246 50  0000 L CNN
+F 1 "10k" H 5120 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4980 4200 50  0001 C CNN
+F 3 "~" H 5050 4200 50  0001 C CNN
+	1    5050 4200
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4900 3550 4900 3200
-Wire Wire Line
-	4900 3200 4800 3200
-Wire Wire Line
-	4500 3200 4200 3200
 Wire Wire Line
 	4200 3200 4200 3300
 Wire Wire Line
@@ -225,10 +221,6 @@ Wire Wire Line
 Connection ~ 4200 3200
 Wire Wire Line
 	4900 3750 4900 4200
-Wire Wire Line
-	4900 4200 4800 4200
-Wire Wire Line
-	4500 4200 4200 4200
 Wire Wire Line
 	4200 4200 4200 4000
 Wire Wire Line
@@ -434,4 +426,36 @@ Wire Notes Line
 	7000 6500 7000 500 
 Wire Wire Line
 	9350 3400 9350 3850
+Connection ~ 4900 3200
+Wire Wire Line
+	4200 3200 4900 3200
+$Comp
+L Nuttali-rescue:+3.3V-power #PWR0146
+U 1 1 604D0219
+P 5250 3200
+F 0 "#PWR0146" H 5250 3050 50  0001 C CNN
+F 1 "+3.3V" H 5265 3373 50  0000 C CNN
+F 2 "" H 5250 3200 50  0001 C CNN
+F 3 "" H 5250 3200 50  0001 C CNN
+	1    5250 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3200 5200 3200
+Connection ~ 4900 4200
+Wire Wire Line
+	4200 4200 4900 4200
+$Comp
+L Nuttali-rescue:+3.3V-power #PWR0149
+U 1 1 604D56F4
+P 5250 4200
+F 0 "#PWR0149" H 5250 4050 50  0001 C CNN
+F 1 "+3.3V" H 5265 4373 50  0000 C CNN
+F 2 "" H 5250 4200 50  0001 C CNN
+F 3 "" H 5250 4200 50  0001 C CNN
+	1    5250 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4200 5200 4200
 $EndSCHEMATC

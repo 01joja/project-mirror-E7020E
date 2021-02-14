@@ -924,12 +924,10 @@ Text GLabel 4650 2650 0    50   Input ~ 0
 NRST
 Text GLabel 4650 2850 0    50   Input ~ 0
 BOOT0
-Text GLabel 6150 2750 2    50   Input ~ 0
+Text GLabel 6150 2950 2    50   Input ~ 0
 R_LED
 Text GLabel 6150 2850 2    50   Input ~ 0
 G_LED
-Text GLabel 6150 2950 2    50   Input ~ 0
-B_LED
 Text GLabel 8350 2800 0    50   Output ~ 0
 R_LED
 Text GLabel 8350 3650 0    50   Output ~ 0
@@ -951,12 +949,8 @@ G_LED
 NoConn ~ 4750 4050
 Text GLabel 6150 4350 2    50   Input ~ 0
 Turbo_LED
-Text GLabel 6150 3050 2    50   Output ~ 0
-Turbo
-Text GLabel 6150 3350 2    50   Input ~ 0
-WheelB
 Text GLabel 4750 4650 0    50   Input ~ 0
-WheelA
+WheelB
 Text GLabel 6150 3250 2    50   Output ~ 0
 WheelButton
 Text GLabel 6150 5750 2    50   Output ~ 0
@@ -965,11 +959,17 @@ Text GLabel 6150 5650 2    50   Output ~ 0
 SideFront
 Text GLabel 4750 4750 0    50   Output ~ 0
 LeftB
-Text GLabel 6150 3150 2    50   Output ~ 0
-RightB
 NoConn ~ 6150 3450
 NoConn ~ 6150 3550
 NoConn ~ 6150 3650
 Wire Wire Line
 	5850 5950 6650 5950
+Text GLabel 6150 3050 2    50   Output ~ 0
+Turbo
+Text GLabel 6150 2750 2    50   Input ~ 0
+B_LED
+Text GLabel 6150 3150 2    50   Output ~ 0
+RightB
+Text GLabel 6150 3350 2    50   Input ~ 0
+WheelA
 $EndSCHEMATC

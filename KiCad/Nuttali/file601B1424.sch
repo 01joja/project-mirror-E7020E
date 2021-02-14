@@ -357,8 +357,6 @@ F 3 "" H 2750 3800 50  0001 C CNN
 	1    2750 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 3500 3350 3500
 $Comp
 L Nuttali-rescue:C_Small-Device C19
 U 1 1 601B779D
@@ -411,8 +409,6 @@ $EndComp
 Text GLabel 3200 1850 2    50   Input ~ 0
 VDDPIX
 Connection ~ 2950 1850
-Text GLabel 3350 3500 2    50   Input ~ 0
-VDDIO_3.3V
 Connection ~ 3000 3500
 Text GLabel 5050 2500 2    50   Output ~ 0
 LED_1
@@ -420,10 +416,14 @@ Text GLabel 6250 2450 0    50   Input ~ 0
 LED_1
 Text GLabel 4250 2600 0    50   Output ~ 0
 VDDPIX
-Text GLabel 4250 2800 0    50   Output ~ 0
-VDDIO_3.3V
 Wire Wire Line
 	4250 2700 3400 2700
 Wire Wire Line
 	3400 2700 3400 2800
+Wire Wire Line
+	3650 3500 3650 2800
+Wire Wire Line
+	3650 2800 4250 2800
+Wire Wire Line
+	3000 3500 3650 3500
 $EndSCHEMATC
