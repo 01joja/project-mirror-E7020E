@@ -11,6 +11,8 @@ Insted of USB-C
 [Reset button](https://www.elfa.se/en/subminiature-tactile-switch-b3u-1no-5n-5mm-omron-electronic-components-b3u-1000p/p/13559010?track=true&no-cache=true&marketingPopup=false) 8.14 SEK
 [Or Slide button for reset and boot0](https://www.elfa.se/en/slide-switch-1co-on-on-pcb-through-hole-rnd-components-rnd-210-00662/p/30161239?q=&pos=1&origPos=8&origPageSize=10&track=true) 13.20 SEK  
 
+[RGB](https://www.elfa.se/sv/led-460nm-gr-515nm-645nm-rgb-mm-kingbright-154a4sureqbfzgc/p/30118972?q=RGB+THT&pos=6&origPos=6&origPageSize=50&track=true)  13.90 SEK  
+
 
 [Mouse Encoder](https://se.rs-online.com/web/p/mechanical-rotary-encoders/7295545) 9.62 SEK  
 [Mouse wheel](https://www.aliexpress.com/item/4001130734583.html?spm=a2g0o.productlist.0.0.c3d54185olZU1Z&algo_pvid=3286bd96-9665-4c1a-8086-8c6a5f0af00b&algo_expid=3286bd96-9665-4c1a-8086-8c6a5f0af00b-7&btsid=0b0a050116122963007627682e0cfa&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)  
