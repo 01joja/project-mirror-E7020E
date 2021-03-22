@@ -1,5 +1,5 @@
     [package]
-authors = ["Per Lindgren <per.lindgren@ltu.se>"]
+authors = ["Per Lindgren <per.lindgren@ltu.se>", "Jonas Jacobsson <01joja@gmail.com>", "Tommy Andersson <anetom-6@student.ltu.se>", "Samuel Graden <samgra-7@student.ltu.se>"]
 edition = "2018"
 readme = "README.md"
 name = "app"
@@ -17,13 +17,13 @@ usb-device = "0.2.7"
 panic-halt = "0.2.0"
 
 # Uncomment for the itm panic examples.
-#panic-itm = "0.4.2"
+panic-itm = "0.4.2"
 
 # Uncomment for the rtt-timing examples.
-#panic-rtt-target = { version = "0.1.1", features = ["cortex-m"] }
+panic-rtt-target = { version = "0.1.1", features = ["cortex-m"] }
 
 # Uncomment for the semihosting examples.
-#panic-semihosting = "0.5.6"
+panic-semihosting = "0.5.6"
 
 # Tracing
 rtt-target = { version = "0.3.0", features = ["cortex-m"] }

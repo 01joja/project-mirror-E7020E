@@ -11,7 +11,7 @@ use stm32f4xx_hal::{
     dwt::Dwt,
     gpio::Speed,
     gpio::{
-        gpiob::{PB10, PB4},
+        gpiob::{PB10, PB12},
         gpioc::{PC2, PC3},
         Alternate, Output, PushPull,
     },
@@ -36,7 +36,7 @@ type PMW3389T = pmw3389::Pmw3389<
             PC3<Alternate<stm32f4xx_hal::gpio::AF5>>,
         ),
     >,
-    PB4<Output<PushPull>>,
+    PB12<Output<PushPull>>,
 >;
 
 #[rtic::app(device = stm32f4xx_hal::stm32, monotonic = rtic::cyccnt::CYCCNT, peripherals = true)]
@@ -68,7 +68,7 @@ const APP: () = {
         // sck    - pb10, (yellow)
         // miso   - pc2, (red)
         // mosi   - pc3, (orange)
-        // ncs    - pb4, (long yellow)
+        // ncs    - pb12, (long yellow)
         // motion - (brown)
         //
         // +5, (white)
@@ -80,7 +80,7 @@ const APP: () = {
         let sck = gpiob.pb10.into_alternate_af5();
         let miso = gpioc.pc2.into_alternate_af5();
         let mosi = gpioc.pc3.into_alternate_af5();
-        let cs = gpiob.pb4.into_push_pull_output().set_speed(Speed::High);
+        let cs = gpiob.pb12.into_push_pull_output().set_speed(Speed::High);
 
         let spi = Spi::spi2(
             device.SPI2,
@@ -110,15 +110,17 @@ const APP: () = {
     fn poll(cx: poll::Context) {
         static mut COUNTER: u32 = 0;
         static mut POS_X: i64 = 0;
+        static mut POS_Y: i64 = 0;
 
         *COUNTER += 1;
         if *COUNTER == 1000 / RATIO {
-            cx.spawn.trace(*POS_X).unwrap();
+            cx.spawn.trace(*POS_X,*POS_Y).unwrap();
             *COUNTER = 0;
         }
 
-        let (x, _y) = cx.resources.pmw3389.read_status().unwrap();
+        let (x, y) = cx.resources.pmw3389.read_status().unwrap();
         *POS_X += x as i64;
+        *POS_Y += y as i64;
 
         // task should run each second N ms (16_000 cycles at 16MHz)
         cx.schedule
@@ -127,15 +129,19 @@ const APP: () = {
     }
 
     #[task(priority = 1)]
-    fn trace(_cx: trace::Context, pos: i64) {
-        static mut OLD_POS: i64 = 0;
+    fn trace(_cx: trace::Context, pos_x: i64, pos_y: i64) {
+        static mut OLD_POS_X: i64 = 0;
+        static mut OLD_POS_Y: i64 = 0;
         rprintln!(
-            "pos_x {:010}, diff {:010} @{:?}",
-            pos,
-            pos - *OLD_POS,
+            "pos_x {:010}, diff_x {:010}, pos_y {:010}, diff_y {:010} @{:?}",
+            pos_x,
+            pos_x - *OLD_POS_X,
+            pos_y,
+            pos_y - *OLD_POS_Y,
             Instant::now()
         );
-        *OLD_POS = pos;
+        *OLD_POS_X = pos_x;
+        *OLD_POS_Y = pos_y;
     }
 
     #[idle]
