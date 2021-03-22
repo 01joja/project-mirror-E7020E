@@ -130,8 +130,8 @@ const APP: () = {
 
     #[task(resources = [scroll_A, scroll_B], schedule = [is_button_pressed])]
     fn is_button_pressed(cx: is_button_pressed::Context) {
-
         //[left,right,mouse,turbo,forward,backward]
+        let mut counter: i32 = 0;
         let mut scroll: [bool;2] = [false,false];
 
         let mut scroll_prev : [bool;2] = [false,false];
@@ -151,19 +151,35 @@ const APP: () = {
 
             if scroll != scroll_prev{
 
-                rprintln!("scroll A: {}, scroll B: {}", scroll[0], scroll[1]);
+                //Sequence for up:
+                //A:Low  B:Low
+                //A:High B:Low
+                //B:High B:High
+                //A:Low  B:High
+                //A:Low  B:Low
+
+                //Sequence for down:
+                //A:Low  B:Low
+                //A:Low  B:High
+                //A:High B:High
+                //A:High B:Low
+                //A:Low  B:Low
 
                 if scroll_prev[0]==scroll_prev[1]{
                     if scroll[1]==scroll_prev[1]{
-                        rprintln!("Up")
+                        counter +=1;
+                        rprintln!("Up count:{}",counter)
                     }else{
-                        rprintln!("Down")
+                        counter -=1;
+                        rprintln!("Down count:{}",counter)
                     }
                 }else{
                     if scroll[0]==scroll_prev[0]{
-                        rprintln!("Up")
+                        counter +=1;
+                        rprintln!("Up count:{}",counter)
                     }else{
-                        rprintln!("Down")
+                        counter -=1;
+                        rprintln!("Down count:{}",counter)
                     }
                 }
 
