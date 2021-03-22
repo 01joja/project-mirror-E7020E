@@ -27,6 +27,8 @@ panic-semihosting = "0.5.6"
 
 # Tracing
 rtt-target = { version = "0.3.0", features = ["cortex-m"] }
+nb = "1.0.0"
+usbd-hid = "0.5.0"
 
 [dependencies.stm32f4]
 version = "0.13.0"
