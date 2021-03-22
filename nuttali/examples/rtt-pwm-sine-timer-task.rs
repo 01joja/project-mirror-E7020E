@@ -1,4 +1,4 @@
-//! cargo run --examples rtt-pwm-sine-timer-task --release
+//! cargo run --example rtt-pwm-sine-timer-task --release
 
 // #![deny(unsafe_code)]
 // #![deny(warnings)]

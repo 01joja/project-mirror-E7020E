@@ -1,4 +1,4 @@
-//! cargo run --examples rtt-pwm
+//! cargo run --example rtt-pwm
 
 #![deny(unsafe_code)]
 #![deny(warnings)]
