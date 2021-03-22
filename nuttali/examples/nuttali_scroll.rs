@@ -128,88 +128,47 @@ const APP: () = {
         }
     }
 
-    #[task(resources = [left_button, right_button, scroll_button, turbo_button, forward_button, backward_button, 
-        scroll_A, scroll_B, led_red], schedule = [is_button_pressed])]
+    #[task(resources = [scroll_A, scroll_B], schedule = [is_button_pressed])]
     fn is_button_pressed(cx: is_button_pressed::Context) {
 
         //[left,right,mouse,turbo,forward,backward]
-        let mut buttons: [bool;8] = [false,false,false,false,false,false,false,false];
+        let mut scroll: [bool;2] = [false,false];
 
-        let mut buttons_prev : [bool;8] = [false,false,false,false,false,false,false, false];
+        let mut scroll_prev : [bool;2] = [false,false];
         loop {
             
-            //Left button pressed == low
-            if cx.resources.left_button.is_high().unwrap() {
-                buttons[0] = false;
-                //rprintln!("left button is set high");
-            } else {
-                buttons[0] = true;
-                //rprintln!("left button is set low");
-            }
-
-            //Right button pressed == low
-            if cx.resources.right_button.is_high().unwrap() {
-                buttons[1] = false;
-            } else {
-                buttons[1] = true;
-                //rprintln!("right button is set low");
-            }
-            
-            //Scroll button pressed == high
-            if cx.resources.scroll_button.is_low().unwrap() {
-                buttons[2] = false;
-            } else {
-                buttons[2] = true;
-                //rprintln!("scroll button is set high");
-            }
-            
-            //Turbo button pressed == high
-            if cx.resources.turbo_button.is_low().unwrap() {
-                buttons[3] = false;
-            } else {
-                buttons[3] = true;
-                //rprintln!("turbo/dpi button is set high");
-            }
-            
-            //Forward button pressed == high
-            if cx.resources.forward_button.is_low().unwrap(){
-                buttons[4] = false;
-            }
-            else{
-                buttons[4] = true;
-            // rprintln!("forward button is set high");
-            }
-            
-            //Back button pressed == high
-            if cx.resources.backward_button.is_low().unwrap(){
-                buttons[5] = false
-            }
-            else{
-                buttons[5] = true;
-                //rprintln!("bacward button is set high");
-            }
-
-            
             if cx.resources.scroll_A.is_high().unwrap(){
-                buttons[6] = true
+                scroll[0] = true
             } else {
-                buttons[6] = false;
+                scroll[0] = false;
             }
 
             if cx.resources.scroll_B.is_high().unwrap(){
-                buttons[7] = true
+                scroll[1] = true
             } else {
-                buttons[7] = false;
+                scroll[1] = false;
             }
 
-            if buttons != buttons_prev{
-                //rprintln!("Buttons -- Right: {}, Left: {}, Middle: {}, DPI: {}, Fram: {}, Bak: {}, scroll forward: {}, scroll back: {}", buttons[0], buttons[1], buttons[2], buttons[3], 
-                //    buttons[4],buttons[5], buttons[6], buttons[7]);
+            if scroll != scroll_prev{
 
-                rprintln!("scroll A: {}, scroll B: {}", buttons[6], buttons[7]);
+                rprintln!("scroll A: {}, scroll B: {}", scroll[0], scroll[1]);
+
+                if scroll_prev[0]==scroll_prev[1]{
+                    if scroll[1]==scroll_prev[1]{
+                        rprintln!("Up")
+                    }else{
+                        rprintln!("Down")
+                    }
+                }else{
+                    if scroll[0]==scroll_prev[0]{
+                        rprintln!("Up")
+                    }else{
+                        rprintln!("Down")
+                    }
+                }
 
                 //rprintln!(print);
-                buttons_prev = buttons;
+                scroll_prev = scroll;
             }
 
 
