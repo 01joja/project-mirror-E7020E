@@ -200,7 +200,7 @@ pub mod hid {
 
 use hid::HIDClass;
 
-type LED = gpio::gpioa::PA5<gpio::Output<gpio::PushPull>>;
+type LED = gpio::gpioa::PA3<gpio::Output<gpio::PushPull>>;
 
 const PERIOD: u32 = 8_000_000;
 
@@ -234,7 +234,7 @@ const APP: () = {
         // assert!(clocks.usbclk_valid());
 
         let gpioa = cx.device.GPIOA.split();
-        let led = gpioa.pa5.into_push_pull_output();
+        let led = gpioa.pa3.into_push_pull_output();
 
         // Pull the D+ pin down to send a RESET condition to the USB bus.
         let mut usb_dp = gpioa.pa12.into_push_pull_output();

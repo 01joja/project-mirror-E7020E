@@ -105,7 +105,7 @@ const APP: () = {
     fn usart2(cx: usart2::Context) {
         let rx = cx.resources.RX;
         let data;
-        match (rx.read()) {
+        match block!(rx.read()) {
             Ok(byte) => {
                 data = byte;
                 let result = cx.spawn.trace(true,byte);

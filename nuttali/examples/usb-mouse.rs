@@ -133,6 +133,7 @@ const APP: () = {
 
     #[task(binds=OTG_FS, resources = [btn, hid, usb_dev, left_button, right_button,pmw3389])]
     fn on_usb(ctx: on_usb::Context) {
+<<<<<<< HEAD
 
         static mut OLD_POS_X: i8 = 0;
         static mut OLD_POS_Y: i8 = 0;
@@ -142,6 +143,11 @@ const APP: () = {
         let mut posX:i8 = ((x)as i8)/50;
         let mut posY:i8 = ((y)as i8)/50; 
         rprintln!("X {}, Y {}", posX, posY);
+=======
+        static mut COUNTER: u16 = 0;
+        
+        rprintln!("Jag körs faktiskt!");
+>>>>>>> 8f6a358 (changed stuff)
         // destruct the context
         let (btn, usb_dev, hid, ) = (ctx.resources.btn, ctx.resources.usb_dev, ctx.resources.hid);
 
