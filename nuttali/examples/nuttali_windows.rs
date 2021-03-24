@@ -60,8 +60,8 @@ const APP: () = {
         // Buttons
         // turbo_button: PA4<Input<PullDown>>,
         right_button: PA5<Input<PullDown>>,
-         scroll_button: PA6<Input<PullDown>>,
-        // forward_button: PB14<Input<PullDown>>,
+        scroll_button: PA6<Input<PullDown>>,
+        forward_button: PB14<Input<PullDown>>,
         // backward_button: PB15<Input<PullDown>>,
         left_button: PC5<Input<PullDown>>,
 
@@ -103,6 +103,7 @@ const APP: () = {
         let left_button = gpioc.pc5.into_pull_down_input();
         let right_button = gpioa.pa5.into_pull_down_input();
         let scroll_button = gpioa.pa6.into_pull_down_input();
+        let forward_button = gpiob.pb14.into_pull_down_input();
         // /\/\/\/\/\
         // ||||||||||
         // Buttons
@@ -173,18 +174,21 @@ const APP: () = {
         // ||||||||||
         // USB
         
-        init::LateResources{ left_button,right_button,scroll_button, hid, usb_dev, pmw3389, scroll_B, scroll_A}
+        init::LateResources{ left_button,right_button,scroll_button,forward_button, hid, usb_dev, pmw3389, scroll_B, scroll_A}
     }
 
-    #[task(binds=OTG_FS, resources = [left_button, right_button,scroll_button, hid, usb_dev, pmw3389, scroll_A, scroll_B])]
+    #[task(binds=OTG_FS, resources = [left_button, right_button,scroll_button,forward_button, hid, usb_dev, pmw3389, scroll_A, scroll_B])]
     fn on_usb(ctx: on_usb::Context) {
         static mut wheel_count: i8 = 0;
         static mut a_prev :bool = false;
         static mut b_prev :bool = false;
         
         // destruct the context
-        let (left_button, right_button,scroll_button, usb_dev, hid, pmw3389, scroll_A, scroll_B) 
-            = (ctx.resources.left_button, ctx.resources.right_button,ctx.resources.scroll_button, ctx.resources.usb_dev, 
+        let (left_button, right_button, scroll_button, forward_button,
+            usb_dev, hid, pmw3389, scroll_A, scroll_B) 
+            = (ctx.resources.left_button, ctx.resources.right_button,
+               ctx.resources.scroll_button,
+               ctx.resources.forward_button, ctx.resources.usb_dev, 
                ctx.resources.hid, ctx.resources.pmw3389, ctx.resources.scroll_A,
                ctx.resources.scroll_B);
 
@@ -211,12 +215,20 @@ const APP: () = {
         }
         //This dose not work yet.
         let scroll:u8;
-        if scroll_button.is_low().unwrap(){
+        if scroll_button.is_high().unwrap(){
+            rprintln!("scroll"); 
             scroll = 4;
         }else{
             scroll = 0;
         }
 
+        let forward:u8;
+        if forward_button.is_high().unwrap(){
+            rprintln!("forward"); 
+            forward = 8 + 16 + 32 + 64 + 128;
+        }else{
+            forward = 0;
+        }
 
 
         
@@ -225,7 +237,7 @@ const APP: () = {
         let report = MouseReport {
             x: x_sensor as i8, // need to convert form i16 to i8
             y: y_sensor as i8, // need to convert form i16 to i8
-            buttons: left+right, // (into takes a bool into an integer)
+            buttons: left+right+scroll+128, // (into takes a bool into an integer)
             wheel: *wheel_count,
         };
 
