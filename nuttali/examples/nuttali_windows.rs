@@ -235,8 +235,8 @@ const APP: () = {
 
         //https://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/
         let report = MouseReport {
-            x: x_sensor as i8, // need to convert form i16 to i8
-            y: y_sensor as i8, // need to convert form i16 to i8
+            x: (x_sensor as i8)>> 1, // need to convert form i16 to i8. Shifts to get smother movement
+            y: (y_sensor as i8)>> 1, // need to convert form i16 to i8. Shifts to get smother movement
             buttons: left+right+scroll+128, // (into takes a bool into an integer)
             wheel: *wheel_count,
         };
