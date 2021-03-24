@@ -6,7 +6,7 @@
 #![no_std]
 
 use stm32f4xx_hal::{
-    gpio::{gpioa::PA4, Input, PullUp},
+    gpio::{gpioc::PC13, Input, PullUp},
     otg_fs::{UsbBus, UsbBusType, USB},
     prelude::*,
 };
@@ -22,7 +22,7 @@ use rtt_target::{rprintln, rtt_init_print};
 #[rtic::app(device = stm32f4xx_hal::stm32, peripherals = true)]
 const APP: () = {
     struct Resources {
-        btn: PA4<Input<PullUp>>,
+        btn: PC13<Input<PullUp>>,
         hid: HIDClass<'static, UsbBusType>,
         usb_dev: UsbDevice<'static, UsbBus<USB>>,
     }
@@ -39,10 +39,10 @@ const APP: () = {
         let rcc = ctx.device.RCC.constrain();
         let _clocks = rcc.cfgr.sysclk(48.mhz()).require_pll48clk().freeze();
 
-        //let gpioc = ctx.device.GPIOC.split();
+        let gpioc = ctx.device.GPIOC.split();
+        let btn = gpioc.pc13.into_pull_up_input();
 
         let gpioa = ctx.device.GPIOA.split();
-        let btn = gpioa.pa4.into_pull_up_input();
         let usb = USB {
             usb_global: ctx.device.OTG_FS_GLOBAL,
             usb_device: ctx.device.OTG_FS_DEVICE,
@@ -63,7 +63,7 @@ const APP: () = {
         init::LateResources { btn, hid, usb_dev }
     }
 
-    #[task(priority = 10,binds=OTG_FS, resources = [btn, hid, usb_dev])]
+    #[task(binds=OTG_FS, resources = [btn, hid, usb_dev])]
     fn on_usb(ctx: on_usb::Context) {
         static mut COUNTER: u16 = 0;
 
@@ -71,7 +71,7 @@ const APP: () = {
         let (btn, usb_dev, hid) = (ctx.resources.btn, ctx.resources.usb_dev, ctx.resources.hid);
 
         let report = MouseReport {
-            x: 0,/*match *COUNTER {
+            x: match *COUNTER {
                 // reached after 100ms
                 100 => {
                     rprintln!("10");
@@ -83,7 +83,7 @@ const APP: () = {
                     -10
                 }
                 _ => 0,
-            },*/
+            },
             y: 0,
             buttons: btn.is_low().unwrap().into(), // (into takes a bool into an integer)
             wheel: 0,
