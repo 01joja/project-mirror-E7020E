@@ -209,6 +209,7 @@ const APP: () = {
         }else{
             right = 0;
         }
+        //This dose not work yet.
         let scroll:u8;
         if scroll_button.is_low().unwrap(){
             scroll = 4;
