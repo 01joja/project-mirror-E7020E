@@ -1,5 +1,25 @@
 # Nuttali Presentation
 
+Created by: 
+Tommy Andderson, anetom-6
+Samuel Gradén, samgra-7
+Jonas Jacobsson, jonjac-6
+
+![Typical gaming mouse](Pictures/razer-deathadder-v2-2020-2.jpg) "Razer"
+# Requirements specification/features
+*   Work as an ordinary mouse
+    * Left button
+    * Right button
+    * Scroll wheel (up and down)
+    * Scroll wheel button
+*   Create a mouse we could use every day
+*   Working on Windows, Mac and Linux
+*   Working RGB since it's a gaming mouse
+*   Forward and backwards button
+*   DPI/Turbo button
+*   DPI/Turbo led
+*   Changing RGB via software
+
 We have a working mouse.
 
 ![Nuttali](Pictures/Finnised_mouse.jpg "Nuttali")
