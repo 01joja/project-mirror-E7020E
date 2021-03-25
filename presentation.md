@@ -1,11 +1,11 @@
 # Nuttali Presentation
 
 Created by: 
-Tommy Andderson, anetom-6
-Samuel Gradén, samgra-7
-Jonas Jacobsson, jonjac-6
+* Tommy Andderson, anetom-6
+* Samuel Gradén, samgra-7
+* Jonas Jacobsson, jonjac-6
 
-![Typical gaming mouse](Pictures/razer-deathadder-v2-2020-2.jpg) "Razer"
+![Typical gaming mouse](Pictures/razer-deathadder-v2-2020-2.jpg)
 # Requirements specification/features
 *   Work as an ordinary mouse
     * Left button
@@ -20,9 +20,44 @@ Jonas Jacobsson, jonjac-6
 *   DPI/Turbo led
 *   Changing RGB via software
 
-We have a working mouse.
+# Design
+* Inspiration
+    * Logitech G304 
+    * [Original design](https://www.thingiverse.com/thing:4084764)  
+* Needed changes
+![All iterations](Pictures/20210325_164827.jpg )
+* Tools used
 
-![Nuttali](Pictures/Finnised_mouse.jpg "Nuttali")
+# Hardware
+* Design choices
+* PCB
+    * First iteration
+    * Second iteration
+    * Third iteration (final iteration)
+    * Support PCB
+* Componets and footprints
+    * Prioritized components
+    * Customized footprints 
+    * Design flaws
+    * Under the hood
+        * ![Under the hood](Pictures/20210325_160722.jpg ) 
+
+![Nuttali Jonas version](Pictures/Finnised_mouse.jpg "Nuttali")
+![Nuttali Tommy version](Pictures/20210325_175329.jpg )
+
+# Testing and validation
+*   Operation system test
+    * Windows 
+    * Mac
+    * Linux
+*   Mouse test
+    * Tested for 1 hour
+    * Tested gaming
+        * Rainbow six siege
+        * CS
+    * Tested on mouse testsites
+        * https://www.onlinemictest.com/mouse-test/
+        * https://www.clickspeedtest.info/mouse-test
 
 ## What works?  
 
