@@ -20,3 +20,16 @@
 - Scroll Wheel hole should be bigger.
 
 #### Goals
+
+##### Achived
+- Works as an ordinary mouse 
+- Create a mouse we could use every day
+- Working on Windows, Mac and Linux.
+- Working RGB
+
+##### Almost 
+- DPI/Turbo button 
+
+#### Not Achived
+- DPI/Turbo Led
+- Changing RBG via software
