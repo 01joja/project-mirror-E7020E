@@ -30,19 +30,26 @@ Created by:
 
 # Hardware
 * Design choices
+* Schematic
+    * ![Sheets](Pictures/nuttali_sheets.PNG)
+    * ![Buttons](Pictures/buttons.PNG)
 * PCB
     * First iteration
     * Second iteration
+    * ![Second iteration](Pictures/pcb_version2.PNG)
     * Third iteration (final iteration)
+    * ![Third iteration](Pictures/pcb_version3.PNG)
     * Support PCB
+    * ![Support pcb](Pictures/pcb_support.PNG)
 * Componets and footprints
     * Prioritized components
     * Customized footprints 
     * Design flaws
     * Under the hood
         * ![Under the hood](Pictures/20210325_160722.jpg ) 
-
-![Nuttali Jonas version](Pictures/Finnised_mouse.jpg "Nuttali")
+        
+# Result
+![Nuttali Jonas version](Pictures/Finnised_mouse.jpg)
 ![Nuttali Tommy version](Pictures/20210325_175329.jpg )
 
 # Testing and validation
@@ -51,7 +58,7 @@ Created by:
     * Mac
     * Linux
 *   Mouse test
-    * Tested for 1 hour
+    * Tested with light activity for 2 hours
     * Tested gaming
         * Rainbow six siege
         * CS
