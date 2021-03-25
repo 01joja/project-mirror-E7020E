@@ -32,4 +32,4 @@
 
 ##### Not Achived
 - DPI/Turbo Led
-- Changing RBG via software
+- Changing RGB via software
