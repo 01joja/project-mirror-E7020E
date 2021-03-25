@@ -13,11 +13,27 @@
 *   Changing RGB via software
 
 # Hardware
+* Design choices
 * PCB
     * First iteration
     * Second iteration
     * Third iteration (final iteration)
+    * Support PCB
 * Componets and footprints
     * Prioritized components
     * Customized footprints 
     * Design flaws
+
+# Testing and validation
+*   Operation system test
+    * Windows 
+    * Mac
+    * Linux
+*   Mouse test
+    * Tested for 1 hour
+    * Tested gaming
+        * Rainbow six siege
+        * CS
+    * Tested on mouse testsites
+        * https://www.onlinemictest.com/mouse-test/
+        * https://www.clickspeedtest.info/mouse-test
