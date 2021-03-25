@@ -18,3 +18,5 @@
 - Small changes with the 3d print.
 - Bigger mouse
 - Scroll Wheel hole should be bigger.
+
+#### Goals
