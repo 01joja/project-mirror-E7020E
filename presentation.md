@@ -21,7 +21,7 @@ We have a working mouse.
 ## Issues
 
 - The PCB needs a few tweaks.
-  - The footprint for the "Överspännings skydd? Vad heter det igentligen?" needs to change. Right now it dose not fit.
+  - The footprint for the ESD-protection needs to change. Right now it dose not fit.
   - The footprints for the 3.3V and 1.9 converter should be changed to fit hand soldering. Right now they are troublesome to hand solder.
   - The footprint for the clock could be a little bit smaller. Right now it takes up too much space.
   - 
