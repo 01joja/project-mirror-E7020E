@@ -1,3 +1,5 @@
+##### Software
+
 - The computer polls the mouse.
 - The mouse button 1, 2 and 3, (left, right, middle) uses HID,
 - The x and y posistions gets coverted to 8 bit, and sent using HID.
