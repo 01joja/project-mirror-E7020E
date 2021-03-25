@@ -1,3 +1,4 @@
+![Typical gaming mouse](https://git.ludd.ltu.se/01joja/nuttali-e7020e/-/blob/master/Pictures/razer-deathadder-v2-2020-2.jpg)
 # Requirements specification/features
 *   Work as an ordinary mouse
     * Left button
