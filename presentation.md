@@ -24,4 +24,4 @@ We have a working mouse.
   - The footprint for the ESD-protection needs to change. Right now it dose not fit.
   - The footprints for the 3.3V and 1.9 converter should be changed to fit hand soldering. Right now they are troublesome to hand solder.
   - The footprint for the clock could be a little bit smaller. Right now it takes up too much space.
-  - 
+
