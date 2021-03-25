@@ -36,3 +36,6 @@ The first release of our results in [E7020E](https://www.ltu.se/edu/course/E70/E
 - Fine tuning of sensor.
 - A way to change settings by using the terminal.
 - New design of scroll wheel.
+
+
+
