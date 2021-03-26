@@ -1,9 +1,9 @@
 # Nuttali Presentation
 
 Created by: 
-* Tommy Andderson, anetom-6
-* Samuel Gradén, samgra-7
-* Jonas Jacobsson, jonjac-6
+* Tommy Andderson, anetom-6 (Grade 5)
+* Samuel Gradén, samgra-7 (Grade 5)
+* Jonas Jacobsson, jonjac-6 (Grade 5)
 
 ![Typical gaming mouse](Pictures/razer-deathadder-v2-2020-2.jpg)
 # Requirements specification/features
