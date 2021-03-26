@@ -52,6 +52,14 @@ Created by:
 ![Nuttali Jonas version](Pictures/Finnised_mouse.jpg)
 ![Nuttali Tommy version](Pictures/20210325_175329.jpg )
 
+
+# Software
+
+- The computer polls the mouse.
+- The mouse button 1, 2 and 3, (left, right, middle) uses HID,
+- The x and y posistions gets coverted to 8 bit, and sent using HID.
+- Sidebuttons are mouse button 4,5 and works as forward and backwards.
+
 # Testing and validation
 *   Operation system test
     * Windows 
@@ -90,12 +98,6 @@ Created by:
   - The footprint for the clock could be a little bit smaller. Right now it takes up too much space.
 
 
-##### Software
-
-- The computer polls the mouse.
-- The mouse button 1, 2 and 3, (left, right, middle) uses HID,
-- The x and y posistions gets coverted to 8 bit, and sent using HID.
-- Sidebuttons are mouse button 4,5 and works as forward and backwards.
 
 ## Evaluation
 ##### Major
