@@ -38,10 +38,8 @@ The first release of our results in [E7020E](https://www.ltu.se/edu/course/E70/E
 
 ### To be expected in later releases
 
+- Fix error when connecting to some Windows devices.
 - Support to change RGB for more values than 0 and 1.
 - Fine tuning of sensor.
 - A way to change settings by using the terminal.
 - New design of scroll wheel.
-
-
-
