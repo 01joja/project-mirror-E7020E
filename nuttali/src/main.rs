@@ -22,8 +22,7 @@ use stm32f4xx_hal::{
     //dwt::Dwt,
     gpio::Speed,
     //Look at resources to see what pin belongs to what.
-    gpio::{gpioa::{//PA1, PA2, PA3, PA4
-         PA5, PA6, PA7},
+    gpio::{gpioa::{PA1, PA2, PA3, PA4, PA5, PA6, PA7},
         gpiob::{PB10, PB12, PB14,PB15},
         gpioc::{PC2, PC3, PC4, PC5},
         Alternate, Output, PushPull, Input, PullDown,// PullUp, 
@@ -92,12 +91,12 @@ const APP: () = {
     struct Resources {
         // late resources
         // Leds
-        // led_blue: PA1<Output<PushPull>>,
-        // led_red: PA3<Output<PushPull>>,
-        // led_green: PA2<Output<PushPull>>,
+        led_blue: PA1<Output<PushPull>>,
+        led_red:  PA3<Output<PushPull>>,
+        led_green: PA2<Output<PushPull>>,
 
         // Buttons
-        // turbo_button: PA4<Input<PullDown>>,
+        dpi_button: PA4<Input<PullDown>>,
         right_button: PA5<Input<PullDown>>,
         scroll_button: PA6<Input<PullDown>>,
         backward_button: PB15<Input<PullDown>>,
@@ -120,6 +119,7 @@ const APP: () = {
     fn init(mut ctx: init::Context) -> init::LateResources {
         static mut EP_MEMORY: [u32; 1024] = [0; 1024];
         static mut USB_BUS: Option<UsbBusAllocator<UsbBusType>> = None;
+        static mut dpi_button_prev: bool = false;
 
         rtt_init_print!();
         rprintln!("init");
@@ -136,18 +136,19 @@ const APP: () = {
         // Initialize (enable) the monotonic timer (CYCCNT)
         ctx.core.DCB.enable_trace();
         ctx.core.DWT.enable_cycle_counter();
+
+        // Leds
+        let led_red = gpioa.pa3.into_push_pull_output();
+        let led_green = gpioa.pa2.into_push_pull_output();
+        let led_blue = gpioa.pa1.into_push_pull_output();
         
         // Buttons
-        // ||||||||||
-        // \/\/\/\/\/
         let left_button = gpioc.pc5.into_pull_down_input();
         let right_button = gpioa.pa5.into_pull_down_input();
         let scroll_button = gpioa.pa6.into_pull_down_input();
         let backward_button = gpiob.pb15.into_pull_down_input();
         let forward_button = gpiob.pb14.into_pull_down_input();
-        // /\/\/\/\/\
-        // ||||||||||
-        // Buttons
+        let dpi_button = gpioa.pa4.into_pull_down_input();
 
         //Scroll
         let scroll_A = gpioa.pa7.into_pull_down_input();
@@ -196,8 +197,9 @@ const APP: () = {
         // \/\/\/\/\/
 
         // Pull the D+ pin down to send a RESET condition to the USB bus.
+        // Dose not work yet.
         //let mut usb_dp = gpioa.pa12.into_alternate_af10();
-        //usb_dp.set_low().ok();
+        //usb_dp= false;
         //delay(_clocks.sysclk().0 / 100);
 
         let usb = USB {
@@ -222,19 +224,27 @@ const APP: () = {
         // ||||||||||
         // USB
         
-        init::LateResources{ left_button,right_button,scroll_button, backward_button, forward_button, hid, usb_dev, pmw3389, scroll_B, scroll_A}
+        init::LateResources{led_blue, led_red, led_green, dpi_button, left_button, right_button, scroll_button, backward_button, forward_button, hid, usb_dev, pmw3389, scroll_B, scroll_A}
     }
 
-    #[task(binds=OTG_FS, resources = [left_button, right_button, scroll_button, backward_button, forward_button, hid, usb_dev, pmw3389, scroll_A, scroll_B])]
+    #[task(binds=OTG_FS, resources = [led_blue, led_red, led_green, dpi_button, left_button, right_button, scroll_button, backward_button, forward_button, hid, usb_dev, pmw3389, scroll_A, scroll_B])]
     fn on_usb(ctx: on_usb::Context) {
         //The scroll wheel need to know the last position or dose not work.
         static mut A_PREV :bool = false;
         static mut B_PREV :bool = false;
         
+        
+        static mut DPI_BUTTON_PREV: bool = false;
+        
+        static mut WRAPPING_LED_COUNTER:i32 = 0;
+        
         // destruct the context
-        let (left_button, right_button, scroll_button, backward_button, 
+        let (led_blue, led_red, led_green, dpi_button,
+            left_button, right_button, scroll_button, backward_button, 
             forward_button, usb_dev, hid, pmw3389, scroll_A, scroll_B) 
-            = (ctx.resources.left_button, ctx.resources.right_button,
+            = (ctx.resources.led_blue,ctx.resources.led_red,
+               ctx.resources.led_green,ctx.resources.dpi_button,
+               ctx.resources.left_button, ctx.resources.right_button,
                ctx.resources.scroll_button, ctx.resources.backward_button,
                ctx.resources.forward_button, ctx.resources.usb_dev, 
                ctx.resources.hid, ctx.resources.pmw3389, ctx.resources.scroll_A,
@@ -260,6 +270,28 @@ const APP: () = {
             buttons: check_buttons(left, right, scroll, backward, forward), // (into takes a bool into an integer)
             wheel: wheel_count,
         };
+
+        
+        if dpi_button.is_high().unwrap() && *DPI_BUTTON_PREV == false{
+            *WRAPPING_LED_COUNTER = *WRAPPING_LED_COUNTER + 1;
+            let (red,blue,green) = change_led(*WRAPPING_LED_COUNTER);
+            if red{
+                led_red.set_high().ok();
+            }else{
+                led_red.set_low().ok();
+            }
+            if blue{
+                led_blue.set_high().ok();
+            }else{
+                led_blue.set_low().ok();
+            }
+            if green{
+                led_green.set_high().ok();
+            }else{
+                led_green.set_low().ok();
+            }
+        }
+        *DPI_BUTTON_PREV = dpi_button.is_high().unwrap();
 
         // push the report
         hid.push_input(&report).ok();
@@ -343,4 +375,45 @@ fn check_buttons(left:bool,right:bool,scroll:bool,backward:bool,forward:bool) ->
         result += 16;
     }
     return result;
+}
+
+fn change_led(no_toggled: i32) -> (bool,bool,bool) {
+    let led_red:bool;
+    let led_blue:bool;
+    let led_green:bool;
+
+    if no_toggled % 8 == 0{
+        led_red= true;
+        led_green= true;
+        led_blue= true;
+    } else if no_toggled % 8 == 1{
+        led_red= true;
+        led_blue= false;
+        led_green= true;
+    } else if no_toggled % 8 == 2{
+        led_red= true;
+        led_blue= true;
+        led_green= false;
+    } else if no_toggled % 8 == 3{
+        led_red= false;
+        led_blue= true;
+        led_green= true;
+    } else if no_toggled % 8 == 4{
+        led_red= true;
+        led_blue= false;
+        led_green= false;
+    } else if no_toggled % 8 == 5{
+        led_red= false;
+        led_blue= false;
+        led_green= true;
+    } else if no_toggled % 8 == 6{
+        led_red= false;
+        led_blue= true;
+        led_green= false;
+    } else {
+        led_red= false;
+        led_blue= false;
+        led_green= false;
+    }
+    return (led_red,led_blue,led_green);
 }

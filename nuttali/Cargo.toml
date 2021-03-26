@@ -3,7 +3,7 @@ authors = ["Per Lindgren <per.lindgren@ltu.se>", "Jonas Jacobsson <01joja@gmail.
 edition = "2018"
 readme = "README.md"
 name = "app"
-version = "0.1.0"
+version = "0.0.1"
 
 [dependencies]
 cortex-m = { version = "0.7.1", features = ["linker-plugin-lto"] }

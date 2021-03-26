@@ -59,9 +59,9 @@ const APP: () = {
 
         // Buttons
         dpi_button: PA4<Input<PullDown>>,
-         right_button: PA5<Input<PullDown>>,
-         scroll_button: PA6<Input<PullDown>>,
-         forward_button: PB14<Input<PullDown>>,
+        right_button: PA5<Input<PullDown>>,
+        scroll_button: PA6<Input<PullDown>>,
+        forward_button: PB14<Input<PullDown>>,
         backward_button: PB15<Input<PullDown>>,
         left_button: PC5<Input<PullDown>>,
 
