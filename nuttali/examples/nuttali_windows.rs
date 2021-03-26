@@ -5,6 +5,41 @@
 #![no_main]
 #![no_std]
 
+
+use usbd_hid::descriptor::MouseReport;
+use usbd_hid::hid_class::HIDClass;
+pub use usb_device::{Result, UsbError};
+use usbd_hid::descriptor::gen_hid_descriptor;
+use usbd_hid::descriptor::SerializedDescriptor;
+use serde::ser::{Serialize, Serializer, SerializeTuple};
+use usbd_hid::descriptor::AsInputReport;
+
+
+/*
+
+extern crate usbd_hid_macros;
+extern crate serde;
+use serde::ser::{Serialize, Serializer, SerializeTuple};
+
+pub use usbd_hid_macros::gen_hid_descriptor;
+
+/// Report types where serialized HID report descriptors are available.
+pub trait SerializedDescriptor {
+    fn desc() -> &'static[u8];
+}
+
+/// Report types which serialize into input reports, ready for transmission.
+pub trait AsInputReport: Serialize {}
+
+/// Prelude for modules which use the `gen_hid_descriptor` macro.
+pub mod generator_prelude {
+    pub use usbd_hid_macros::gen_hid_descriptor;
+    pub use crate::descriptor::{SerializedDescriptor, AsInputReport};
+    pub use serde::ser::{Serialize, SerializeTuple, Serializer};
+}
+
+*/
+use cortex_m::{asm::delay, peripheral::DWT};
 use stm32f4xx_hal::{
     dwt::Dwt,
     gpio::Speed,
@@ -20,10 +55,6 @@ use stm32f4xx_hal::{
     prelude::*,
 };
 use usb_device::{bus::UsbBusAllocator, prelude::*};
-use usbd_hid::{
-    descriptor::{generator_prelude::*, MouseReport},
-    hid_class::HIDClass,
-};
 
 use embedded_hal::spi::MODE_3;
 use rtic::cyccnt::{Instant, U32Ext as _};
@@ -47,6 +78,38 @@ type PMW3389T = pmw3389::Pmw3389<
     >,
     PB12<Output<PushPull>>,
 >;
+
+/*
+
+#[gen_hid_descriptor(
+    (collection = APPLICATION, usage_page = GENERIC_DESKTOP, usage = MOUSE) = {
+        (collection = PHYSICAL, usage = POINTER) = {
+            (usage_page = BUTTON, usage_min = BUTTON_1, usage_max = BUTTON_3) = {
+                #[packed_bits 3] #[item_settings data,variable,absolute] buttons=input;
+            };
+            (usage_page = GENERIC_DESKTOP,) = {
+                (usage = X,) = {
+                    #[item_settings data,variable,relative] x=input;
+                };
+                (usage = Y,) = {
+                    #[item_settings data,variable,relative] y=input;
+                };
+                (usage = WHEEL,) = {
+                    #[item_settings data,variable,relative] wheel=input;
+                };
+            };
+        };
+    }
+)]
+#[allow(dead_code)]
+pub struct NuttaliReport {
+    pub buttons: u8,
+    pub x: i8,
+    pub y: i8,
+    pub wheel: i8, // Scroll down (negative) or up (positive) this many units
+}
+*/
+
 
 #[rtic::app(device = stm32f4xx_hal::stm32, peripherals = true)]
 const APP: () = {
@@ -141,8 +204,8 @@ const APP: () = {
             _clocks,
         );
 
-        let mut delay = DwtDelay::new(&mut core.DWT, _clocks);
-        let mut pmw3389 = pmw3389::Pmw3389::new(spi, cs, delay).unwrap();
+        let mut delay_or_something = DwtDelay::new(&mut core.DWT, _clocks);
+        let mut pmw3389 = pmw3389::Pmw3389::new(spi, cs, delay_or_something).unwrap();
 
         // set in burst mode
         pmw3389.write_register(Register::MotionBurst, 0x00);
@@ -153,6 +216,12 @@ const APP: () = {
         // USB
         // ||||||||||
         // \/\/\/\/\/
+
+        // Pull the D+ pin down to send a RESET condition to the USB bus.
+        let mut usb_dp = gpioa.pa12.into_alternate_af10();
+        usb_dp.set_low().ok();
+        delay(_clocks.sysclk().0 / 100);
+
         let usb = USB {
             usb_global: ctx.device.OTG_FS_GLOBAL,
             usb_device: ctx.device.OTG_FS_DEVICE,
@@ -160,6 +229,7 @@ const APP: () = {
             pin_dm: gpioa.pa11.into_alternate_af10(),
             pin_dp: gpioa.pa12.into_alternate_af10(),
         };
+
         USB_BUS.replace(UsbBus::new(usb, EP_MEMORY));
         
         let hid = HIDClass::new(USB_BUS.as_ref().unwrap(), MouseReport::desc(), 1);

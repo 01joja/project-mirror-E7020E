@@ -241,6 +241,7 @@ const APP: () = {
         let report = MouseReport {
             x: (x_sensor as i8)>> 1, // need to convert form i16 to i8. Shifts to get smother movement
             y: (y_sensor as i8)>> 1, // need to convert form i16 to i8. Shifts to get smother movement
+            //resolution: 1,
             buttons: left+right+scroll+forward, // (into takes a bool into an integer)
             wheel: *WHEEL_COUNT,
         };
