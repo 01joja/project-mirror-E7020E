@@ -29,10 +29,16 @@ The first release of our results in [E7020E](https://www.ltu.se/edu/course/E70/E
   - X and Y movement.
   - USB-communication.
 
+## Version 0.0.2 is released!
+
+- Side buttons, backwards and forwards now work
+- RGB settings can now change mode from the DPI button
+- Tested on Linux, Mac and Windows
+- Created a customized report
+
 ### To be expected in later releases
 
-- Support to change RGB.
-- Working implementation of side buttons and dpi button.
+- Support to change RGB for more values than 0 and 1.
 - Fine tuning of sensor.
 - A way to change settings by using the terminal.
 - New design of scroll wheel.
