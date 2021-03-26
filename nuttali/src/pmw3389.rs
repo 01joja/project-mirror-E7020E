@@ -6,7 +6,7 @@ use crate::DwtDelay;
 use embedded_hal::blocking::spi::{Transfer, Write};
 use embedded_hal::digital::v2::OutputPin;
 
-use rtt_target::{rprint, rprintln};
+use rtt_target::{rprintln};
 
 #[allow(dead_code)]
 #[derive(Clone, Copy)]
