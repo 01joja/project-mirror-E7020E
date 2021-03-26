@@ -81,18 +81,20 @@ Created by:
 - Sidebuttons are mouse button 4,5 and works as forward and backwards.
 
 # Testing and validation
-*   Operation system test
-    * Windows 
-    * Mac
-    * Linux
-*   Mouse test
-    * Tested with light activity for 2 hours
-    * Tested gaming
-        * Rainbow six siege
-        * CS
-    * Tested on mouse testsites
-        * https://www.onlinemictest.com/mouse-test/
-        * https://www.clickspeedtest.info/mouse-test
+
+* Design test
+  * _Dose it feels good?_
+* Operation system test
+  * Windows 
+  * Mac
+  * Linux
+* Mouse test
+  * Tested with light activity for 2 hours
+  * Tested gaming
+    * CS
+  * Tested on mouse testsites
+    * https://www.onlinemictest.com/mouse-test/
+    * https://www.clickspeedtest.info/mouse-test
 
 ## What works?  
 
@@ -115,7 +117,7 @@ Created by:
 - The PCB needs a few tweaks.
   - The footprint for the ESD-protection needs to change. Right now it dose not fit.
   - The footprints for the 3.3V and 1.9 converter should be changed to fit hand soldering. Right now they are troublesome to hand solder.
-  - The footprint for the clock could be a little bit smaller. Right now it takes up too much space.
+  - The footprint for the crystal could be a little bit smaller. Right now it takes up too much space.
 
 
 
