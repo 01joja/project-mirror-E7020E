@@ -39,7 +39,7 @@ Created by:
 
 # Design
 * Name
-* Inspiration
+* 3D-model
   * Logitech G304/G305 
   * [Original design](https://www.thingiverse.com/thing:4084764)  
 * Needed changes
