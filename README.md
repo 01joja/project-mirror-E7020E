@@ -18,6 +18,13 @@ Public found on: [Public](https://github.com/01joja/project-mirror-E7020E)
 
 Course found on: [Course](https://gitlab.henriktjader.com/jonjac-6/nuttali-mirror-of-project)
 
+## Version 0.0.2 is released!
+
+- Side buttons, backwards and forwards now work
+- RGB settings can now change mode from the DPI button
+- Tested on Linux, Mac and Windows
+- Created a customized report
+
 ## Version 0.0.1 is released!
 
 The first release of our results in [E7020E](https://www.ltu.se/edu/course/E70/E7020E/E7020E-Design-av-inbyggda-system-1.67927?kursView=kursplan).
@@ -29,13 +36,6 @@ The first release of our results in [E7020E](https://www.ltu.se/edu/course/E70/E
   - X and Y movement.
   - USB-communication.
 
-## Version 0.0.2 is released!
-
-- Side buttons, backwards and forwards now work
-- RGB settings can now change mode from the DPI button
-- Tested on Linux, Mac and Windows
-- Created a customized report
-
 ### To be expected in later releases
 
 - Fix error when connecting to some Windows devices.
@@ -43,3 +43,5 @@ The first release of our results in [E7020E](https://www.ltu.se/edu/course/E70/E
 - Fine tuning of sensor.
 - A way to change settings by using the terminal.
 - New design of scroll wheel.
+
+[Presentation](presentation.md)
