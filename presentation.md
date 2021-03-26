@@ -66,19 +66,6 @@ Created by:
         * https://www.onlinemictest.com/mouse-test/
         * https://www.clickspeedtest.info/mouse-test
 
-## What works?  
-
-- Nearly everything works on the PCB:s.
-  - All buttons can be registered.
-  - Encoder for the scroll wheel.
-  - Sensor.
-  - RGB.
-- 3D-print:
-  - The shell and button alignment works most of the time.
-- USB communication.
-  - send left, right and scroll click.
-  - send up and down scroll.
-  - send movement of mouse.
 
 ## Issues
 
@@ -123,3 +110,19 @@ Created by:
 ##### Not Achieved
 - DPI/Turbo Led
 - Changing RGB via software
+- 
+
+## What works?  
+
+- Nearly everything works on the PCB:s.
+  - All buttons can be registered.
+  - Encoder for the scroll wheel.
+  - Sensor.
+  - RGB.
+- 3D-print:
+  - The shell and button alignment works most of the time.
+- USB communication.
+  - send left, right and scroll click.
+  - send up and down scroll.
+  - send movement of mouse.
+
