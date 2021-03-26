@@ -106,7 +106,7 @@ Created by:
 - Hardware debounce
 
 ##### Minor
-- More RBG Leds
+- More RGB Leds
 - Change the resistor for the leds
 - Small changes with the 3d print.
 - Bigger mouse
