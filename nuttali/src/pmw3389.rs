@@ -6,7 +6,7 @@ use crate::DwtDelay;
 use embedded_hal::blocking::spi::{Transfer, Write};
 use embedded_hal::digital::v2::OutputPin;
 
-use rtt_target::{rprint, rprintln};
+use rtt_target::{rprintln};
 
 #[allow(dead_code)]
 #[derive(Clone, Copy)]
@@ -220,7 +220,7 @@ where
     }
 
     /// Read status
-    pub fn read_status(&mut self) -> Result<((i16, i16)), E> {
+    pub fn read_status(&mut self) -> Result<(i16, i16), E> {
         self.com_begin();
 
         self.spi.transfer(&mut [Register::MotionBurst.addr()])?;

@@ -119,7 +119,6 @@ const APP: () = {
     fn init(mut ctx: init::Context) -> init::LateResources {
         static mut EP_MEMORY: [u32; 1024] = [0; 1024];
         static mut USB_BUS: Option<UsbBusAllocator<UsbBusType>> = None;
-        static mut dpi_button_prev: bool = false;
 
         rtt_init_print!();
         rprintln!("init");
