@@ -86,6 +86,7 @@ const APP: () = {
         static mut dpi_button_prev: bool = false;
 
         rtt_init_print!();
+    
         rprintln!("init");
 
         // Set up the system clock.
@@ -205,16 +206,13 @@ const APP: () = {
 
         static mut dpi_toggle_prev :bool = false;
         static mut dpi_toggle: i8 = 0;
-        static mut dpi_settings: [i8; 2] = [10, 20];
+        static mut dpi_settings: [i8; 2] = [2, 8];
         static mut dpi_button_prev: bool = false;
 
         static mut forward_button_pressed: bool = false;
         static mut backward_button_pressed: bool = false;
         static mut wrapping_led_counter:u8 = 0;
 
-
-
-        
         // destruct the context
         let (left_button, right_button,scroll_button, usb_dev, hid, pmw3389, scroll_A, scroll_B, dpi_button, 
             forward_button, backward_button, led_red, led_blue, led_green) 
