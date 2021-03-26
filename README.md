@@ -3,9 +3,9 @@
 Project in Embedded System Design at LTU (E7020E).
 
 Members:  
-Tommy Andersson - anetom-6  
-Samuel Graden   - samgra-7  
-Jonas Jacobsson - jonjac-6  
+Tommy Andersson - anetom-6  (Grade 5)
+Samuel Graden   - samgra-7  (Grade 5)
+Jonas Jacobsson - jonjac-6  (Grade 5)
 
 Name *nuttali* is inspired from *Ochrotomys nuttalli* that is the *Latin* name for [golden mouse](https://en.wikipedia.org/wiki/Golden_mouse).
 
