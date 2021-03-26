@@ -20,6 +20,23 @@ Created by:
 *   DPI/Turbo led
 *   Changing RGB via software
 
+
+## Goals
+
+##### Achieved
+- Works as an ordinary mouse 
+- Create a mouse we could use every day
+- Working on Windows, Mac and Linux.
+- Working RGB
+
+##### Almost 
+- DPI/Turbo button 
+
+##### Not Achieved
+- DPI/Turbo Led
+- Changing RGB via software
+
+
 # Design
 * Name
 * Inspiration
@@ -115,20 +132,5 @@ Created by:
 - Small changes with the 3d print.
 - Bigger mouse
 - Scroll Wheel.
-
-## Goals
-
-##### Achieved
-- Works as an ordinary mouse 
-- Create a mouse we could use every day
-- Working on Windows, Mac and Linux.
-- Working RGB
-
-##### Almost 
-- DPI/Turbo button 
-
-##### Not Achieved
-- DPI/Turbo Led
-- Changing RGB via software
 
 
