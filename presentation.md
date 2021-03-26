@@ -107,6 +107,7 @@ Created by:
 - The sensor does not always register, our primary guess for the reason is that the sensor is a bit high.
 - The scroll button is a bit slow.
 - Hardware debounce
+- Cabel
 
 ##### Minor
 - More RGB Leds
