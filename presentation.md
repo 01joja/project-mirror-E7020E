@@ -21,12 +21,15 @@ Created by:
 *   Changing RGB via software
 
 # Design
+* Name
 * Inspiration
-    * Logitech G304 
-    * [Original design](https://www.thingiverse.com/thing:4084764)  
+  * Logitech G304/G305 
+  * [Original design](https://www.thingiverse.com/thing:4084764)  
 * Needed changes
 ![All iterations](Pictures/20210325_164827.jpg )
 * Tools used
+  * Fusion 360
+  * Pursa Mini in Xp-el
 
 # Hardware
 * Design choices
