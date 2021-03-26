@@ -114,7 +114,7 @@ Created by:
 - Change the resistor for the leds
 - Small changes with the 3d print.
 - Bigger mouse
-- Scroll Wheel hole should be bigger.
+- Scroll Wheel.
 
 ## Goals
 
