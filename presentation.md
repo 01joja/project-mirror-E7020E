@@ -38,7 +38,9 @@ Created by:
 
 
 # Design
-* Name
+* Name _Nuttali_
+  * Golden mouse in latin.
+![Golden mouse](Pictures/GoldenMouse.png) 
 * 3D-model
   * Logitech G304/G305 
   * [Original design](https://www.thingiverse.com/thing:4084764)  
