@@ -1,11 +1,14 @@
 # Nuttali E7020E
 
-Project in Embedded System Design at LTU (E7020E).
+We built a gaming mouse in 2 months. Project in Embedded System Design at LTU (E7020E).
 
 Members:  
-Tommy Andersson - anetom-6  (Grade 5)
-Samuel Graden   - samgra-7  (Grade 5)
-Jonas Jacobsson - jonjac-6  (Grade 5)
+* Tommy Andersson - anetom-6  (Grade 5)
+* Samuel Graden   - samgra-7  (Grade 5)
+* Jonas Jacobsson - jonjac-6  (Grade 5)
+
+<img src="Pictures/20210325_175329.jpg" width="520"> <img src="Pictures/20210325_160722.jpg" width="520">
+
 
 Name *nuttali* is inspired from *Ochrotomys nuttalli* that is the *Latin* name for [golden mouse](https://en.wikipedia.org/wiki/Golden_mouse).
 
